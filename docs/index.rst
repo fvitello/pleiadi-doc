@@ -12,12 +12,12 @@ DISCOS documentation
 .. toctree::
    :maxdepth: 1
 
-   quickstart/index.rst 
-   managingfiles/index.rst
-   usingsoftware/index.rst
-   submittingjobs/index.rst
-   softwarespecific/index.rst
-   license.rst
+   docs/quickstart/index.rst 
+   docs/managingfiles/index.rst
+   docs/usingsoftware/index.rst
+   docs/submittingjobs/index.rst
+   docs/softwarespecific/index.rst
+   docs/license.rst
 
 
 Indices and tables
