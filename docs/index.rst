@@ -6,7 +6,7 @@ PLEIADI is a project by INAF - National Institute for Astrophysics, Italy.
 It is devoted to XXX.  
 
 
-DISCOS documentation
+Pleiadi documentation
 ====================
 
 .. toctree::
