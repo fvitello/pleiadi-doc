@@ -422,14 +422,7 @@ which can be shortened with:
 
 ``$ module av``
 
-Managing files
-====================
 
-Using software and libraries 
-====================
 
-Submitting jobs to the cluster 
-====================
 
-Software-specific documentation 
-====================
+
