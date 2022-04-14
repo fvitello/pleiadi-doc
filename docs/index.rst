@@ -12,6 +12,7 @@ Pleiadi documentation
 .. toctree::
    :maxdepth: 1
 
+   overview/index.rst 
    quickstart/index.rst 
    managingfiles/index.rst
    usingsoftware/index.rst
