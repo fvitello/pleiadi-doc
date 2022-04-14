@@ -421,8 +421,3 @@ On the cluster Pleiadi, there are several available modules to set a customized 
 which can be shortened with:
 
 ``$ module av``
-
-
-
-
-
