@@ -9,9 +9,9 @@ Overview of the Pleiadi - OACT Cluster
 
 - **r35c1s[01-12]** 12 nodes with XX CPUs (Xx Intel(R) Xeon(R) XX XX CPU @ XXGHz), XX RAM 
 - **r35c[2-6]s[01-12]** 60 nodes with XX CPUs (Xx Intel(R) Xeon(R) XX XX CPU @ XXGHz), XX RAM 
-- **r33c2s[01-02]**** 2 nodes with XX CPUs (Xx Intel(R) Xeon(R) XX XX CPU @ XXGHz), XX RAM  |br|    
+- **r33c2s[01-02]** 2 nodes with XX CPUs (Xx Intel(R) Xeon(R) XX XX CPU @ XXGHz), XX RAM  |br|    
   XX Nvidia XX V100 GPU
-- **r33c2s[03-06]**** 4 nodes with XX CPUs (Xx Intel(R) Xeon(R) XX XX CPU @ XXGHz), XX RAM  |br|    
+- **r33c2s[03-06]** 4 nodes with XX CPUs (Xx Intel(R) Xeon(R) XX XX CPU @ XXGHz), XX RAM  |br|    
   XX Nvidia XX XX GPU
   
   
