@@ -18,6 +18,24 @@ The Pleiadi cluster has the following components:
 
 The below table summarizes the main features of the Pleiadi cluster:
 
++------------------------+-------------------------------------------+
+| Architechture          | Cluster Linux x86_64                      |
++------------------------+-------------------------------------------+
+| Nodes interconnection  | Infiniband 100 Gb/s                       |
++------------------------+-------------------------------------------+
+| Service network        | Ethernet 1 Gb/s                           |
++------------------------+-------------------------------------------+
+| CPU Model              | Intel(R) Xeon(R) Gold 5118 CPU @ 2.30GHz  |
++------------------------+-------------------------------------------+
+| Number of nodes        | 78                                        |
++------------------------+-------------------------------------------+
+| Operating system       | CentOS Linux release 7.9.2009             |
++------------------------+-------------------------------------------+
+| Scheduler              | SLURM                                     |
++------------------------+-------------------------------------------+
+| Storage volume         | 201 TB, BeeGFS parallel filesystem        |
++------------------------+-------------------------------------------+
+
 Quick start – First steps 
 ====================
 
@@ -433,3 +451,20 @@ On the cluster Pleiadi, there are several available modules to set a customized 
 which can be shortened with:
 
 ``$ module av``
+
+Compute nodes main features
+^^^^^^^^^^^^^^^^^^^^^^
+
+The below table summarizes the main features of the compute nodes of the Pleiadi cluster, which are useful to set the Slurm options in the submission scripts or for interactive jobs submissions: 
+
++-----------------------------+----------------+
+| Number of CPUs              | 36             |
++-----------------------------+----------------+
+| Number of sockets           | 2              |
++-----------------------------+----------------+
+| Number of cores per socket  | 18             |
++-----------------------------+----------------+
+| Number of threads per core  | 1              |
++-----------------------------+----------------+
+| RAM memory                  | 128 or 256 GB  |
++-----------------------------+----------------+
