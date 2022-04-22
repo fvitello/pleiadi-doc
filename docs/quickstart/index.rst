@@ -512,4 +512,9 @@ and it has the following absolute path:
 
 ``/mnt/beegfs/username``
 
-where ``/mnt/beegfs`` is the storage volume. Each user will have a personal directory called ``username`` on the storage area, which cannot be accessed by other users and that will have a soft and a hard quota of XX and YY TB, respectively.
+where ``/mnt/beegfs`` is the storage volume. Each user will have a personal directory called ``username`` on the storage area, which cannot be accessed by other users and that will have a soft and a hard quota of YY and ZZ TB, respectively.
+
+Quota
+-------------------
+
+The below table summarizes the quota and grace periods set for the different areas on the Pleiadi cluster:
