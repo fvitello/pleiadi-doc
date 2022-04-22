@@ -55,7 +55,7 @@ For example, for the user ``pippo`` the login command is:
 
 After executing the ``ssh`` command, the login can be completed inserting a password or without the need of inserting a password, if a public key created on your laptop is provided to the cluster.
 
-#. **With the password**: insert the password provided by the cluster administrator when you user was created on the cluster 
+#. **With the password**: insert the password provided by the cluster administrator when you user was created on the cluster. It is recommended to change the provided password at first login with the command ``passwd``. 
 #. **With key exchange**:
 
    #. Create on your laptop a public/private couple of keys, with the command ``$ ssh-keygen``, confirming the default values during the procedure. With this command, a public (``id_rsa.pub``) and a private (``id_rsa``) key are created in the ``.ssh`` directory of your laptop.
@@ -468,3 +468,35 @@ The below table summarizes the main features of the compute nodes of the Pleiadi
 +-----------------------------+----------------+
 | RAM memory                  | 128 or 256 GB  |
 +-----------------------------+----------------+
+
+
+Managing files
+====================
+
+**Note:** There is no backup of the data stored on the Pleiadi cluster. Any removed file is lost forever. It is the user’s responsibility to keep a copy of the contents of their data in a safe place.
+
+The *home* directory
+-------------------
+
+Once logged in, the user will end up in its *home* directory, that has the following absolute path:
+
+``/home/username/``
+
+To come back to the *home* directory from another directory, the user can execute the command:
+
+``$ cd $HOME``
+
+or simply
+
+``$ cd``
+
+and the *home* directory path can be shown with the command::
+
+ $ echo $HOME
+ /home/username/
+
+The *home* directory is available on the frontend node and on all the compute nodes of the cluster, since it is shared with the Network Filesystem protocol (``nfs``).
+
+The *home* directory is dedicated to source codes (programs, scripts), configuration files, and small datasets (like input files), and all the files in this directory cannot exceed the quota set to XX TB. 
+
+The *home* directory is accessible only to the user owner of the *home* directory.
