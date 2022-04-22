@@ -6,6 +6,18 @@ Userguide for Pleiadi cluster
 
 Note: along the entire document the dollar $ sign indicates the shell prompt.
 
+Cluster structure
+====================
+
+The Pleiadi cluster has the following components:
+
+#. **1 frontend node**
+#. **72 compute nodes without GPUs** (12 with a RAM memory of 256 GB and 60 with a RAM memory of 128 GB)
+#. **6 compute nodes with 1 GPU each** (4 of K40 type and 2 of V100 type), with a RAM memory of 128 GB
+#. **1 storage volume** of 201 TB with BeeGFS parallel filesystem
+
+The below table summarizes the main features of the Pleiadi cluster:
+
 Quick start – First steps 
 ====================
 
