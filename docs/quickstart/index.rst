@@ -14,7 +14,7 @@ The Pleiadi cluster has the following components:
 #. **1 frontend node**
 #. **72 compute nodes without GPUs** (12 with a RAM memory of 256 GB and 60 with a RAM memory of 128 GB)
 #. **6 compute nodes with 1 GPU each** (4 of K40 type and 2 of V100 type), with a RAM memory of 128 GB
-#. **1 storage volume** of 201 TB with BeeGFS parallel filesystem
+#. **1 storage volume** of 174 TB with BeeGFS parallel filesystem
 
 The below table summarizes the main features of the Pleiadi cluster:
 
@@ -33,7 +33,7 @@ The below table summarizes the main features of the Pleiadi cluster:
 +------------------------+-------------------------------------------+
 | Scheduler              | SLURM                                     |
 +------------------------+-------------------------------------------+
-| Storage volume         | 201 TB, BeeGFS parallel filesystem        |
+| Storage volume         | 174 TB, BeeGFS parallel filesystem        |
 +------------------------+-------------------------------------------+
 
 Quick start – First steps 
@@ -480,7 +480,7 @@ The *home* directory
 
 Once logged in, the user will end up in its *home* directory, that has the following absolute path:
 
-``/home/username/``
+``/home/username``
 
 To come back to the *home* directory from another directory, the user can execute the command:
 
@@ -493,10 +493,23 @@ or simply
 and the *home* directory path can be shown with the command::
 
  $ echo $HOME
- /home/username/
+ /home/username
 
 The *home* directory is available on the frontend node and on all the compute nodes of the cluster, since it is shared with the Network Filesystem protocol (``nfs``).
 
-The *home* directory is dedicated to source codes (programs, scripts), configuration files, and small datasets (like input files), and all the files in this directory cannot exceed the quota set to XX TB. 
+The *home* directory is dedicated to source codes (programs, scripts), configuration files, and small datasets (like input files), and all the files in this directory cannot exceed the hard quota set to XX TB. The soft quota is of XX TB.
 
 The *home* directory is accessible only to the user owner of the *home* directory.
+
+The *work* directory
+-------------------
+
+For more memory-demanding computations, the user should not refer to the *home* directory but to the *work* directory. The *work* directory can be accessed with the following command:
+
+``$ cd $WORK``
+
+and it has the following absolute path:
+
+``/mnt/beegfs/username``
+
+where ``/mnt/beegfs`` is the storage volume. Each user will have a personal directory called ``username`` on the storage area, which cannot be accessed by other users and that will have a soft and a hard quota of XX and YY TB, respectively.
