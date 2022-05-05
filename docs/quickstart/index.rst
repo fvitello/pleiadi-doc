@@ -66,17 +66,31 @@ After executing the ``ssh`` command, the login can be completed inserting a pass
 Copying files
 -------------------
 
-#. **With the** ``scp`` **command**: the ``scp`` command works as the ``cp`` command except for the fact that it works across the network to copy files from one computer to another.
+#. **With the** ``scp`` **command**: the ``scp`` command works as the ``cp`` command except for the fact that it works across the network to copy files from one computer to another. You have to execute the following commands on your pc:
+
    #. To copy a file from your laptop to Pleiadi: ``$ scp /path-on-your-laptop/my_file.txt pippo@pleiadi.oact.inaf.it:/path-on-Pleiadi/``
    #. To copy a file from Pleiadi to your laptop: ``$ scp pippo@pleiadi.oact.inaf.it:/path-on-Pleiadi/my_file.txt /path-on-your-laptop/``
    #. To copy a directory from your laptop to Pleiadi: ``$ scp -r /path-on-your-laptop/my_dir pippo@pleiadi.oact.inaf.it:/path-on-Pleiadi/``
    #. To copy a directory from Pleiadi to your laptop: ``$ scp -r pippo@pleiadi.oact.inaf.it:/path-on-Pleiadi/my_dir /path-on-your-laptop/``
-#. **With the** ``rsync`` **command**: As syntax, ``rsync`` works as the ``scp`` command. The main difference is that, differently from ``scp``, when copying the content of one directory in another directory, it copies only the files that are different from the two directories, which saves time. Moreover, with respect to the ``scp`` protocol, ``rsync`` guarantees (1) more security (it allows encryption of data using ``ssh`` protocol during transfer), (2) less bandwidth (it employs compression and decompression of data blocks during the transfers), and (3) the absence of special privileges to install and execute it. The correspondent commands listed above with ``rsync`` are:
+   
+#. **With the** ``rsync`` **command**: As syntax, ``rsync`` works as the ``scp`` command. The main difference is that, differently from ``scp``, when copying the content of one directory in another directory, it copies only the files that are different from the two directories, which saves time. Moreover, with respect to the ``scp`` protocol, ``rsync`` guarantees (1) more security (it allows encryption of data using ``ssh`` protocol during transfer), (2) less bandwidth (it employs compression and decompression of data blocks during the transfers), and (3) the absence of special privileges to install and execute it. The correspondent commands listed above with ``rsync`` that have to be executed on your pc are:
 
    #. ``$ rsync /path-on-your-laptop/my_file.txt pippo@pleiadi.oact.inaf.it:/path-on-Pleiadi/``
    #. ``$ rsync pippo@pleiadi.oact.inaf.it:/path-on-Pleiadi/my_file.txt /path-on-your-laptop/``
    #. ``$ rsync -r /path-on-your-laptop/my_dir pippo@pleiadi.oact.inaf.it:/path-on-Pleiadi/``
    #. ``$ rsync  -r pippo@pleiadi.oact.inaf.it:/path-on-Pleiadi/my_dir /path-on-your-laptop/``
+   
+#. **To transfer a large number of small files**: Transferring a lot of small files will take a very long time with the ``scp`` command because of the overhead of copying every file individually. In such case, using the ``tar`` command will reduce the transfer time significantly. You can first create a ``tar`` (compress) archive, then ``scp`` it as a single file and then ``untar`` the file. But the most efficient way is to do all three operations in one go, without creating an intermediate file. You have to execute the following commands on your pc:
+ 
+   #. To copy the local directory ``My_Directory``, that contains several small files, on the Pleiadi cluster, at the path ``/path/to/my/destination``: ``$ tar cz ./My_Directory | ssh pippo@pleiadi.oact.inaf.it 'tar xvz -C /path/to/my/destination'``. With this command, the files in the local directory ``My_Directory`` are automatically compressed, transferred to the Pleiadi cluster, and again uncompressed in the ``/path/to/my/destination/My_Directory`` directory.
+   #. To copy the remote directory ``My_Directory_1``, at path ``/path/to/my/source``, that contains several small files, locally on your pc: ``ssh pippo@pleiadi.oact.inaf.it 'tar -C /path/to/my/source -cz My_Directory_1' | tar -xz``.
+   
+   The ``-C`` option of the ``tar`` command compresses the files.
+ 
+#. **To transfer large files**: When transferring large files, it is better to copy them with the ``-C`` option of the ``scp`` command: in this way, the file is firstly compressed and then decompressed. You have to execute the following commands on your pc:
+ 
+   #. To copy a large file from your laptop to Pleiadi: ``$ scp -C /path-on-your-laptop/my_file.txt pippo@pleiadi.oact.inaf.it:/path-on-Pleiadi/``
+   #. To copy a large file from Pleiadi to your laptop: ``$ scp -C pippo@pleiadi.oact.inaf.it:/path-on-Pleiadi/my_file.txt /path-on-your-laptop/``
 
 Editing files
 -------------------
