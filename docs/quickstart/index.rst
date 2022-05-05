@@ -91,6 +91,21 @@ Copying files
  
    #. To copy a large file from your laptop to Pleiadi: ``$ scp -C /path-on-your-laptop/my_file.txt pippo@pleiadi.oact.inaf.it:/path-on-Pleiadi/``
    #. To copy a large file from Pleiadi to your laptop: ``$ scp -C pippo@pleiadi.oact.inaf.it:/path-on-Pleiadi/my_file.txt /path-on-your-laptop/``
+   
+#. **To resume interrupted transfers**: If, for any reason, a transfer is interrupted, instead of restarting it from scratch you can recover it, with the ``rsync`` command. The ``rsync`` command will compare the source and the destination directories and only transfer what needs to be transferred, e.g. missing files and modified files. For this purpose, the ``rsync`` command is used in this way: 
+
+   #. ``$ rsync -va /path-on-your-laptop/my_dir pippo@pleiadi.oact.inaf.it:/path-on-Pleiadi``
+   #. ``$ rsync -va pippo@pleiadi.oact.inaf.it:/path-on-Pleiadi/my_dir /path-on-your-laptop`` 
+   
+   It is important not to put the ending slash in the destination path ``/path-on-Pleiadi`` (in case of copies from your pc to the cluster) or ``/path-on-your-laptop`` (in case of copies from the cluster to your pc), as you might end up with a full copy of the directory inside the existing, partial, one. To check what will happen before you run the commands above, execute the ``rsync`` command with the ``-n`` option (dry-run), that performs a trial run with no changes made:
+   
+   #. ``$ rsync -n /path-on-your-laptop/my_dir pippo@pleiadi.oact.inaf.it:/path-on-Pleiadi``
+   #. ``$ rsync -n pippo@pleiadi.oact.inaf.it:/path-on-Pleiadi/my_dir /path-on-your-laptop`` 
+   
+   If one large file is left half-transferred, you can resume it using the ``--partial`` option:
+   
+   #. ``$ rsync --partial /path-on-your-laptop/my_large_file.txt pippo@pleiadi.oact.inaf.it:/path-on-Pleiadi/``
+   #. ``$ rsync --partial pippo@pleiadi.oact.inaf.it:/path-on-Pleiadi/my_large_file.txt /path-on-your-laptop/``
 
 Editing files
 -------------------
