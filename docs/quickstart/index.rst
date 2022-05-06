@@ -548,7 +548,7 @@ The two main commands to copy the data from your pc to the cluster and viceversa
 
 We now detail other situations that is important to know when tranferring data between your pc and the cluster.
 
-Transfer a large number of small file
+Transfer a large number of small files
 ^^^^^^^^^^^^^^^^^^^^^^
 
 Transferring a lot of small files will take a very long time with the ``scp`` command because of the overhead of copying every file individually. In such case, using the ``tar`` command will reduce the transfer time significantly. You can first create a ``tar`` (compress) archive, then ``scp`` it as a single file and then ``untar`` the file. But the most efficient way is to do all three operations in one go, without creating an intermediate file. You have to execute the following commands:
