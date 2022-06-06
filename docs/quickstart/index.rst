@@ -98,7 +98,7 @@ If you have a Windows Operating System on your laptop, it is recommended to use 
 
 .. figure:: PuTTY.png
     :align: center
-    :figwidth: 200px
+    :figwidth: 500px
 
     Figure 1: Putty - Configuration for the access to remote clusters from computers with Windows Operating System.
 
@@ -545,7 +545,7 @@ The *home* directory absolute path can be shown with the command::
 
 The *home* directory is available on the frontend node and on all the compute nodes of the cluster, since it is shared with the Network Filesystem protocol (``nfs``).
 
-The *home* directory is dedicated to the data necessary to the launching of the task, to the data that have to be saved at the end of each task, to source codes (programs, scripts), to configuration files, and to small datasets (like input files). For EACH USER all the files in this directory cannot exceed the quota of 10 GB/year (see also Section `Quota`_). 
+The *home* directory is dedicated to the data necessary to the launching of the task, to the data that have to be saved at the end of each task, to source codes (programs, scripts), to configuration files, and to small datasets (like input files). For each user all the files in this directory cannot exceed the quota of 20 GB (see also Section `Quota`_). 
 
 **Note:** To your main working activity, e.g. with large datasets, do not use the *home* directory but the *work* directory (see Section `The work directory`_). 
 
@@ -572,7 +572,7 @@ and it has the following absolute path::
  $ echo $WORK
  /mnt/beegfs/username
 
-where ``/mnt/beegfs`` is the storage volume, defined with the high-performance, scalability, flexibility, and robustness BeeGFS parallel filesystem (`BeeGFS <https://www.beegfs.io/c/>`_). Each user will have a personal directory called ``<username>`` on the storage area ``/mnt/beegfs``, which cannot be accessed by other users. For EACH GROUP all the files in this directory cannot exceed the hard quota of 10 TB/year (see also Section `Quota`_). As the *home* directory, the *work* directory is available both on the frontend and on all the compute nodes of Pleiadi cluster, since it is shared with ``nfs``.
+where ``/mnt/beegfs`` is the storage volume, defined with the high-performance, scalability, flexibility, and robustness BeeGFS parallel filesystem (`BeeGFS <https://www.beegfs.io/c/>`_). Each user will have a personal directory called ``<username>`` on the storage area ``/mnt/beegfs``, which cannot be accessed by other users. For each user all the files in this directory cannot exceed the quota defined in the user's request of the account (see also Section `Quota`_). As the *home* directory, the *work* directory is available both on the frontend and on all the compute nodes of Pleiadi cluster, since it is shared with ``nfs``.
 
 
 Data archiving
@@ -586,8 +586,8 @@ Quota
 
 The following storage quota are set for the different areas of the Pleiadi cluster:
 
-#. *home*: EACH USER can use up to 10 GB per year of disk space.
-#. *work*: EACH GROUP can use up to 10 TB per year of disk space.
+#. *home*: each user can use up to 20 GB of disk space.
+#. *work*: each user can use up to the quota defined in the request of the account.
 
 The users can request an increase of the group quota reserved for them sending us an e-mail at the address board.pleiadi@inaf.it, including the proper motivations for the request that will be successively evaluated by the local Staff. Possible quota extensions have to be an expiration, that must be as short as possible. Anyway, the period required for the quota extension cannot exceed the expiration date expected for the account.
 
