@@ -68,9 +68,7 @@ To request calculation resources, you need to fill in an application form. The f
 
 The user will receive an e-mail with credential details, i.e. a username and a password. The username will be of the form "Fistinitialof thenameSurname", all lowercase. The account is to be considered active from the moment you receive the confirmation e-mail containing your login credentials.
 
-The account expires as indicated in the application form. To renew the account you must send again the same form sent in the first request, taking care to change the fields with the updated information. To know the expiration date of your account you can use the command:
-
-``$ accountExpire``
+The account expires as indicated in the application form. To renew the account you must send again the same form sent in the first request, taking care to change the fields with the updated information.
 
 
 Connecting to the cluster
