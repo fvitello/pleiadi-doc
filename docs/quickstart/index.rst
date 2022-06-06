@@ -529,16 +529,16 @@ or simply
 
 ``$ cd``
 
-and the *home* directory absolute path can be shown with the command::
+The *home* directory absolute path can be shown with the command::
 
  $ echo $HOME
  /home/username
 
 The *home* directory is available on the frontend node and on all the compute nodes of the cluster, since it is shared with the Network Filesystem protocol (``nfs``).
 
-The *home* directory is dedicated to source codes (programs, scripts), configuration files, and small datasets (like input files), and all the files in this directory cannot exceed the hard quota set to XX TB. The soft quota is of XX TB (see also Section `Quota`_). 
+The *home* directory is dedicated to source codes (programs, scripts), configuration files, and small datasets (like input files). For EACH USER all the files in this directory cannot exceed the quota of 10 GB/year (see also Section `Quota`_). 
 
-**Note:** To your main working activity, e. g. with large datasets, do not use the *home* directory but the *work* directory (see Section `The work directory`_). 
+**Note:** To your main working activity, e.g. with large datasets, do not use the *home* directory but the *work* directory (see Section `The work directory`_). 
 
 The *home* directory is accessible only to the user owner of the *home* directory.
 
@@ -554,18 +554,22 @@ and it has the following absolute path::
  $ echo $WORK
  /mnt/beegfs/username
 
-where ``/mnt/beegfs`` is the storage volume, defined with the high-performance, scalability, flexibility, and robustness BeeGFS parallel filesystem (`BeeGFS <https://www.beegfs.io/c/>`_). Each user will have a personal directory called ``<username>`` on the storage area ``/mnt/beegfs`, which cannot be accessed by other users and that will have a soft and a hard quota of YY and ZZ TB, respectively. As the *home* directory, the *work* directory is available both on the frontend and on all the compute nodes of Pleiadi cluster, since it is shared with ``nfs``.
+where ``/mnt/beegfs`` is the storage volume, defined with the high-performance, scalability, flexibility, and robustness BeeGFS parallel filesystem (`BeeGFS <https://www.beegfs.io/c/>`_). Each user will have a personal directory called ``<username>`` on the storage area ``/mnt/beegfs``, which cannot be accessed by other users. For EACH GROUP all the files in this directory cannot exceed the hard quota of 10 TB/year (see also Section `Quota`_). As the *home* directory, the *work* directory is available both on the frontend and on all the compute nodes of Pleiadi cluster, since it is shared with ``nfs``.
+
 
 Quota
 ^^^^^^^^^^^^^^^^^^^^^^
 
-We detail below the meanings of *soft quota*, *grace period*, and *hard quota*.
+The following storage quota are set for the different areas of the Pleiadi cluster:
 
-#. *Soft quota*: Disk space level below which nothing happens for the user. When the soft quota is reached, the user receives a warning e-mail. This does not prevent the user to write more data until the *grace period* is reached.
-#. *Grace period*: Amount of time during which the user is allowed to go over the soft quota limit before the system blocks your ability to write more data.
-#. *Hard quota*: Disk space level above which the system blocks immediately your ability to write more data. However, you will still be able to read your data. If your hard quota is exceeded or if you exceed the grace time for your soft quota, your will be blocked from submitting jobs until you clean your space.
+#. *home*: EACH USER can use up to 10 GB per year of disk space.
+#. *work*: EACH GROUP can use up to 10 TB per year of disk space.
 
-The below table summarizes the soft and hard quotas and grace periods set for the different areas of the Pleiadi cluster:
+The users can request an increase of the group quota reserved for them sending us an e-mail at the address board.pleiadi@inaf.it, including the proper motivations for the request that will be successively evaluated by the local Staff. Possible quota extensions have to be an expiration, that must be as short as possible. Anyway, the period required for the quota extension cannot exceed the expiration date expected for the account.
+
+For the accounts that will result in overquota to the monthly control following the expiration of the same, the data will be archived in advance as soon as the normal grace period granted (7 days) has passed. If at the next monthly check the account will still be overquota even after the anticipated creation of compressed archives, we will proceed to the early removal of archive files. 
+
+
 
 The command provides all the quota usages on the the different areas of the Pleiadi cluster.
 
