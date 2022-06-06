@@ -547,11 +547,20 @@ The *home* directory absolute path can be shown with the command::
 
 The *home* directory is available on the frontend node and on all the compute nodes of the cluster, since it is shared with the Network Filesystem protocol (``nfs``).
 
-The *home* directory is dedicated to source codes (programs, scripts), configuration files, and small datasets (like input files). For EACH USER all the files in this directory cannot exceed the quota of 10 GB/year (see also Section `Quota`_). 
+The *home* directory is dedicated to the data necessary to the launching of the task, to the data that have to be saved at the end of each task, to source codes (programs, scripts), to configuration files, and to small datasets (like input files). For EACH USER all the files in this directory cannot exceed the quota of 10 GB/year (see also Section `Quota`_). 
 
 **Note:** To your main working activity, e.g. with large datasets, do not use the *home* directory but the *work* directory (see Section `The work directory`_). 
 
 The *home* directory is accessible only to the user owner of the *home* directory.
+
+To copy files from your own host on your personal computer to your own *home* directory on the Pleiadi cluster it is possible to use the ``scp`` command (see Section `Copying files (basics)`_) in this way:
+
+``$ scp -r /path/to/local/dir/ username@pleiadi.oact.inaf.it:/home/username``
+
+Viceversa, to copy files from your own *home* directory on the Pleiadi cluster to your own host on your personal computer it is possible to use the ``scp`` command in this way:
+
+``$ scp -r username@pleiadi.oact.inaf.it:/home/username /path/to/local/dir/``
+
 
 The *work* directory
 ^^^^^^^^^^^^^^^^^^^^^^
