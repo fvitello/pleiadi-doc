@@ -575,9 +575,11 @@ The users can request an increase of the group quota reserved for them sending u
 
 For the accounts that will result in overquota to the monthly control following the expiration of the same, the data will be archived in advance as soon as the normal grace period granted (7 days) has passed. If at the next monthly check the account will still be overquota even after the anticipated creation of compressed archives, we will proceed to the early removal of archive files. 
 
-To control the used quota on the different areas of the Pleiadi cluster, you can use the following command:
+To monitor the used quota and the quota limits on the different areas of the Pleiadi cluster, you can use the following command:
 
+``$ quota``
 
+For more information about the ``quota`` command, see the webpage `quota <http://www.pleiadi.inaf.it>`_.
 
 
 Transferring files to and from the clusters
