@@ -557,6 +557,12 @@ and it has the following absolute path::
 where ``/mnt/beegfs`` is the storage volume, defined with the high-performance, scalability, flexibility, and robustness BeeGFS parallel filesystem (`BeeGFS <https://www.beegfs.io/c/>`_). Each user will have a personal directory called ``<username>`` on the storage area ``/mnt/beegfs``, which cannot be accessed by other users. For EACH GROUP all the files in this directory cannot exceed the hard quota of 10 TB/year (see also Section `Quota`_). As the *home* directory, the *work* directory is available both on the frontend and on all the compute nodes of Pleiadi cluster, since it is shared with ``nfs``.
 
 
+Data archiving
+^^^^^^^^^^^^^^^^^^^^^^
+
+If the account is not reactivated within 3 MONTHS after the expiration indicated in the application form, two compressed archives containing all the files present in the *home* and in the *work* areas are created in the respective directories. After further 6 months from the creation of the compressed archives, i.e. after 9 months after the expiration of the account, all the archives are definitely removed from the storage and the account is deleted.
+
+
 Quota
 ^^^^^^^^^^^^^^^^^^^^^^
 
@@ -569,9 +575,9 @@ The users can request an increase of the group quota reserved for them sending u
 
 For the accounts that will result in overquota to the monthly control following the expiration of the same, the data will be archived in advance as soon as the normal grace period granted (7 days) has passed. If at the next monthly check the account will still be overquota even after the anticipated creation of compressed archives, we will proceed to the early removal of archive files. 
 
+To control the used quota on the different areas of the Pleiadi cluster, you can use the following command:
 
 
-The command provides all the quota usages on the the different areas of the Pleiadi cluster.
 
 
 Transferring files to and from the clusters
