@@ -20,7 +20,7 @@ Rules for the Pleiadi cluster usage
 ====================
 
 #. Calculations, simulations, etc. have NEVER to be launched directly from command line on the frontend node, in order not to risk to make unusable the frontend node or other shared resources (penalty of account blocking and task interruption). ALWAYS pass through the execution queues of the SLURM scheduler (also in case of compilation).
-#. It is NOT allowed to employ the resources for usage different from the research purposes.
+#. It is NOT allowed to employ the resources for usage different from the research and/or teaching purposes.
 #. Every user is responsable for every activity either performed by or attributable to herself/himself. Therefore, the account sharing is discouraged and it is only allowed if communicated in time to the HPC Staff. In general, it is NOT allowed to share sensitive data (e.g. username and password) that the user undertakes to properly store.
 
 
@@ -60,7 +60,17 @@ Quick start – First steps
 Account and resources request
 -------------------
 
+The PLEIADI@INAF project provides HPC computing resources and technical support for research and teaching activities. 
 
+The computing resources (see Section `Cluster structure`_) are managed by a board (board.pleiadi@inaf.it) which assigns calculation time and credentials for resources usage. 
+
+To request calculation resources, you need to fill in an application form. The form and other information concerning the calculation resources can be found at the website `Resources <https://www.ict.inaf.it/computing/Pleiadi/>`_.
+
+The user will receive an e-mail with credential details, i.e. a username and a password. The username will be of the form "Fistinitialof thenameSurname", all lowercase. The account is to be considered active from the moment you receive the confirmation e-mail containing your login credentials.
+
+The account expires as indicated in the application form. To renew the account you must send again the same form sent in the first request, taking care to change the fields with the updated information. To know the expiration date of your account you can use the command:
+
+``$ accountExpire``
 
 
 Connecting to the cluster
