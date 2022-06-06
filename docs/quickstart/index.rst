@@ -6,6 +6,15 @@ Userguide for Pleiadi cluster
 
 Note: along the entire document the dollar $ sign indicates the shell prompt.
 
+The current guide illustrates the usage of the HPC@PLEIADI system (Pleiadi cluster) of the INAF-Osservatorio Astrofisico di Catania (OACT) institution based on the SLURM workload manager system.
+
+Gentlemen’s agreement
+====================
+
+#. Using this cluster for research purposes, the user automatically autorizes the Pleiadi's Staff to publish her/his personal data (e.g name, surname, and research group) and the data associated to the research on the website `Pleiadi <http://www.pleiadi.inaf.it>`_, in all the other paper publications broadcast by HPC@PLEIADI (e.g. annual reports and presentations), and on any other support system.
+#. Using a HPC@PLEIADI system for research purposes, the user accepts to cite the PLEIADI services on all her/his scientific publications in papers, conference proceedings, books, and any other support type. We suggest the following citation "INAF’s PLEIADI calculation resources were employed (`<http://www.pleiadi.inaf.it>`_)".
+
+
 Cluster structure
 ====================
 
