@@ -97,6 +97,13 @@ After executing the ``ssh`` command, the login can be completed inserting a pass
    #. From the next login, you will be able to execute ``$ ssh pippo@pleiadi.oact.inaf.it`` without password insertion.
    
 If you have a Windows Operating System on your laptop, it is recommended to use the PuTTY application (available at the website `PuTTY <http://www.putty.org>`_), to be configured as in the below figure:
+
+.. figure:: PuTTY.png
+    :align: center
+    :figwidth: 200px
+
+    Figure 1: Putty - Configuration for the access to remote clusters from computers with Windows Operating System.
+
    
 Copying files (basics)
 -------------------
