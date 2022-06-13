@@ -275,7 +275,7 @@ After the heading, the submission script ``run_ppl.cmd`` might continue as::
  
  exit 0
  
-that is, a working directory, ``/path/to/my_working_directory``, is set and the job will run the first job step ``srun ./my_executable``, namely it will execute the program executable ``my_executable`` in the working directory (``./``) on the node where the resource requested by the heading part of the job script is allocated. Then, a second job step, ``srun sleep 60``, will execute the ``sleep 60`` command on the requested resource.
+that is, a working directory, ``/path/to/my_working_directory``, is set and the job will run the first job step ``srun ./my_executable``, namely it will execute the program executable ``my_executable`` in the working directory (``./``) on the node where the resource requested by the heading part of the job script is allocated. Then, a second job step, ``srun sleep 60``, will execute the ``sleep 60`` command on the requested resource. The command ``srun`` in front of the ``./my_executable``, the ``hostname``, and the ``sleep 60`` commands is optional.
 
 After writing the submission script, it has to be submitted to Slurm through the ``sbatch`` command:
 
@@ -302,7 +302,7 @@ We illustrate below some examples of *parallel* jobs.
 Parallel job with MPI or other multi-process paradigms
 """"""""""""""""""
 
-A job parallelized with MPI is a multi-process program. Since in the Slurm context, a task is identified with a process, a multi-process program is made of several tasks. The tasks are requested with the ``-–ntasks`` option, that we have already seen in the `Creating and submitting a job`_ section. The tasks can be in a single node or spread across more nodes. The number of nodes is specified with the ``--nodes`` option and the number of tasks per node is specified with the ``--ntasks-per-node`` option. If the cores in each node of the cluster are distributed in more sockets, also the ``--ntasks-per-socket`` option, that specifies the number of tasks per socket in a node, can be set. The Pleiadi cluster is a dual socket platform, namely it has two sockets per node, and for optimizing job performances, it is recommended to set this option to the half of the value set for the ``--ntasks-per-node`` option. In this way, the tasks in each node are equally distributed between the two sockets. If the options ``--nodes`` and ``--ntasks-per-node`` are set, the option is automatically determined as ``-–ntasks = --nodes x --ntasks-per-node`` and it can be omitted in the Slurm submission script.
+A job parallelized with MPI is a multi-process program. Since in the Slurm context, a task is identified with a process, a multi-process program is made of several tasks. The tasks are requested with the ``-–ntasks`` option, that we have already seen in the `Creating and submitting a job`_ section. The tasks can be in a single node or spread across more nodes. The number of nodes is specified with the ``--nodes`` option and the number of tasks per node is specified with the ``--ntasks-per-node`` option. If the cores in each node of the cluster are distributed in more sockets, also the ``--ntasks-per-socket`` option, that specifies the number of tasks per socket in a node, can be set. The Pleiadi cluster is a dual socket platform, namely it has two sockets per node, and for optimizing job performances, it is recommended to set this option to the half of the value set for the ``--ntasks-per-node`` option. In this way, the tasks in each node are equally distributed between the two sockets. If the options ``--nodes`` and ``--ntasks-per-node`` are set, the option ``-–ntasks`` is automatically determined as ``-–ntasks = --nodes x --ntasks-per-node`` and it can be omitted in the Slurm submission script.
 
 We show below an example of submission script for a job parallelized with MPI::
 
@@ -319,30 +319,31 @@ We show below an example of submission script for a job parallelized with MPI::
  #SBATCH --partition=debug
 
  cd /path/to/my_working_directory
- module load intel_xe_2020_update4
+ module load gcc-11.2.0 openmpi-4.1.2/gcc-11.2.0
  
- srun ./my_MPI_executable
+ mpirun -np 72 ./my_MPI_executable
  
  exit 0
 
 In this submission script, a job called ``my_job_2`` requests 2 nodes with 36 CPUs per node, and in each node the 36 CPUs are equally distributed between the two sockets (18 CPUs per socket). It also requests 125 GB of RAM per node, and it will run on the debug partition. The error and output messages of the job will be saved in the ``job.<JOBID>.err`` and ``job.<JOBID>.out`` files. Since Pleiadi has 36 cores per node and it is a dual-socket platform, the ``--ntasks-per-node`` and ``--ntasks-per-socket`` options are set to the maximum allowed values. This job will run on a total number of tasks equal to ``-–ntasks = --nodes x --ntasks-per-node = 72``. A new option, ``--account``, is added to the submission script, which means that the computational hours for the job execution will be taken from the ``my_account`` account.
-Once the job is submitted, the command ``srun`` will create 72 instances of the executable ``my_MPI_executable`` on the requested resources allocated by Slurm. As in the example in the `Creating and submitting a job`_ section, the working directory is set to ``/path/to/my_working_directory``. The ``module load intel_xe_2020_update4`` command is used to load the ``intel_xe_2020_update4`` module. The modules istruct the shell to modify a user’s environment: in this way a user can customize its own environment according to her/his specific needs. In this example, we load the ``intel_xe_2020_update4`` module, to use Intel(R) MPI to compile and run the application ``my_MPI.cpp``, which can be compiled prior to the submission of the Slurm script, with:
+Once the job is submitted, the command ``mpirun -np 72`` will create 72 instances of the executable ``my_MPI_executable`` on the requested resources allocated by Slurm. As in the example in the `Creating and submitting a job`_ section, the working directory is set to ``/path/to/my_working_directory``. The ``module load gcc-11.2.0 openmpi-4.1.2/gcc-11.2.0`` command is used to load in sequence the ``gcc-11.2.0`` and ``openmpi-4.1.2/gcc-11.2.0`` modules. The modules istruct the shell to modify a user’s environment: in this way a user can customize its own environment according to her/his specific needs. In this example, we load the ``gcc-11.2.0`` and the ``openmpi-4.1.2/gcc-11.2.0`` modules, to use (Open MPI) 4.1.2 to compile and run the application ``my_MPI.cpp``, which can be compiled prior to the submission of the Slurm script, with:
 
 ``$ mpicc my_MPI.c -o my_MPI_executable``
 
 Loading this module we have the following compiler and MPI versions::
 
  $ mpicc --version
- gcc (GCC) 4.8.5 20150623 (Red Hat 4.8.5-44)
- Copyright (C) 2015 Free Software Foundation, Inc.
+ gcc (GCC) 11.2.0
+ Copyright (C) 2021 Free Software Foundation, Inc.
  This is free software; see the source for copying conditions.  There is NO
  warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
  $ mpirun --version
- Intel(R) MPI Library for Linux* OS, Version 2019 Update 9 Build 20200923 (id: abd58e492)
- Copyright 2003-2020, Intel Corporation.
+ mpirun (Open MPI) 4.1.2
+
+ Report bugs to http://www.open-mpi.org/community/help/
  
-Other possible modules to use to compile and execute a MPI program are those of the ``/opt/Modules/compilers/openmpi`` group. For more information about modules consult the website `Modules <https://modules.readthedocs.io/en/latest/>`_, and to see all the modules available on Pleiadi cluster see the section `Available modules`_.
+Other possible modules to use to compile and execute a MPI program are those of the ``/opt/Modules/compilers/intel`` group. For more information about modules consult the website `Modules <https://modules.readthedocs.io/en/latest/>`_, and to see all the modules available on Pleiadi cluster see the section `Available modules`_.
 
 
 Parallel job with a shared memory paradigm (e.g. OpenMP)
