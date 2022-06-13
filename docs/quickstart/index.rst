@@ -126,7 +126,7 @@ Copying files (basics)
 Editing files
 -------------------
 
-To edit a file, the most convenient way is to use a terminal-based editor. Some example are Vi, Vim, Emacs, Nano, mcedit, ne, slap, micro, pico, Joe or mped. Vi, Vim, and nano are preinstalled on Pleiadi.
+To edit a file, the most convenient way is to use a terminal-based editor. Some example are Vi, Vim, Emacs, Nano, mcedit, ne, slap, micro, pico, Joe or mped. **Vi, Vim, Emacs, and Nano are preinstalled on Pleiadi**.
 
 SLURM quick start tutorial
 -------------------
@@ -140,7 +140,7 @@ To obtain information about SLURM on your cluster the ``sinfo`` and the ``squeue
 
 The ``sinfo`` command provides information about:
 
-#. **PARTITION**: The partitions available on the cluster, where a partition is a set of compute nodes logically grouped and dedicated to different tasks (e.g. batch processing, debugging, post processing, or visualization). The default partition is marked with an asterisk;
+#. **PARTITION**: The partitions available on the cluster, where a partition is a set of compute nodes logically grouped and dedicated to different tasks (e.g. batch processing, debugging, post processing, or visualization). The default partition is marked with an asterisk. The partitions present on Pleiadi are ``debug``, ``gpu``, ``v100``, and ``256g*``, where ``256g*`` is the default partition;
 #. **AVAIL**: The state of the partitions;
 #. **TIMELIMIT**: The maximum time limit for a job launched by any user in days-hours:minutes:seconds. If the parameter is “infinite” it means no time limit is set for that partition;
 #. **NODES**: The number of nodes with a particular configuration in each partition;
@@ -151,10 +151,19 @@ Example of output of the ``sinfo`` command on Pleiadi::
 
     $ sinfo
       PARTITION  AVAIL  TIMELIMIT  NODES   STATE  NODELIST
+          debug     up   infinite      1   inval  r35c1s10
           debug     up   infinite      5   down*  r35c1s11,r35c3s[11-12],r35c5s10,r35c6s11
-          debug     up   infinite      2   alloc  r35c1s[01-02]
-          debug     up   infinite     65    idle  r35c1s[03-10,12],r35c2s[01-12],r35c3s[01-10],r35c4s[01-12],r35c5s[01-09,11-12],r35c6s[01-10,12]
-           gpu*     up   infinite      6    idle  r33c2s[01-06]
+          debug     up   infinite      2     mix  r35c1s09,r35c6s12
+          debug     up   infinite      8   alloc  r35c1s[01-08]
+          debug     up   infinite     56    idle  r35c1s12,r35c2s[01-12],r35c3s[01-10],r35c4s[01-12],r35c5s[01-09,11-12],r35c6s[01-10]
+          gpu       up   infinite      6    idle  r33c2s[01-06]
+          v100      up   infinite      2    idle  r33c2s[01-02]
+          256g*     up   infinite      1   inval  r35c1s10
+          256g*     up   infinite      1   down*  r35c1s11
+          256g*     up   infinite      1     mix  r35c1s09
+          256g*     up   infinite      8   alloc  r35c1s[01-08]
+          256g*     up   infinite      1    idle  r35c1s12
+          
            
 If ``sinfo`` is launched with the ``-N`` option, it shows the output in a node-oriented fashion.
 
@@ -247,9 +256,8 @@ which must be followed by the ``#SBATCH`` directives.
 A possible heading of a submission script, which might be called ``run_ppl.cmd``, can be::
 
  #!/bin/bash
- #
  #SBATCH --job-name=my_job_1
- #SBATCH --time=10:00
+ #SBATCH --time=00:10:00
  #SBATCH --ntasks=1
  #SBATCH --mem-per-cpu=100
  #SBATCH --error=job.%j.err
