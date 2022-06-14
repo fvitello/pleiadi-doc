@@ -70,6 +70,27 @@ The user will receive an e-mail with credential details, i.e. a username and a p
 
 The account expires as indicated in the application form. To renew the account you must send again the same form sent in the first request, taking care to change the fields with the updated information.
 
+Monitoring of the used CPU hours (CPU hours saldo)
+^^^^^^^^^^^^^^^^^^^^^^
+
+To monitor the utilization of the CPU hours assigned when the account was activated by the board members, according to the user's request, you can use the SLURM report command ``sreport``, for example with the follwing options: 
+
+``$ sreport -t Hour cluster AccountUtilizationByUser user=<username> start=M1/DD1/YY1 end=M2/DD2/YY2``
+
+For example, the command::
+
+  $ sreport -t Hour cluster AccountUtilizationByUser user=pippo start=6/10/22 end=6/13/22
+    
+    --------------------------------------------------------------------------------
+    Cluster/Account/User Utilization 2022-06-10T00:00:00 - 2022-06-12T23:59:59 (259200 secs)
+    Usage reported in CPU Hours
+    --------------------------------------------------------------------------------
+     Cluster         Account     Login     Proper Name     Used   Energy 
+    --------- --------------- --------- --------------- -------- -------- 
+    pleiadi-+           pippo    pippo+                      300        0
+    
+provides the CPU Hours used by the user ``pippo`` from 00:00:00 of 10/06/2022 to 23:59:59 of 12/06/2022.
+
 
 Connecting to the cluster
 -------------------
@@ -277,7 +298,7 @@ After the heading, the submission script ``run_ppl.cmd`` might continue as::
  
 that is, a working directory, ``/path/to/my_working_directory``, is set and the job will run the first job step ``srun ./my_executable``, namely it will execute the program executable ``my_executable`` in the working directory (``./``) on the node where the resource requested by the heading part of the job script is allocated. Then, a second job step, ``srun sleep 60``, will execute the ``sleep 60`` command on the requested resource. The command ``srun`` in front of the ``./my_executable``, the ``hostname``, and the ``sleep 60`` commands is optional.
 
-After writing the submission script, it has to be submitted to Slurm through the ``sbatch`` command:
+After writing the submission script, it has to be submitted to Slurm through the ``sbatch`` command::
 
  $ sbatch run_ppl.cmd
    sbatch: Submitted batch job 83
@@ -646,27 +667,6 @@ to monitor the *home* quota or
 to monitor the *work* quota. A periodic control of the quota limits is performed by the staff members.
 
 
-Monitoring of the used CPU hours (CPU hours saldo)
-^^^^^^^^^^^^^^^^^^^^^^
-
-To monitor the utilization of the CPU hours assigned when the account was activated by the board members, according to the user's request, you can use the SLURM report command ``sreport``, for example with the follwing options: 
-
-``$ sreport -t Hour cluster AccountUtilizationByUser user=<username> start=M1/DD1/YY1 end=M2/DD2/YY2``
-
-For example::
-
-  $ sreport -t Hour cluster AccountUtilizationByUser user=pippo start=6/10/22 end=6/13/22
-    
-    --------------------------------------------------------------------------------
-    Cluster/Account/User Utilization 2022-06-10T00:00:00 - 2022-06-12T23:59:59 (259200 secs)
-    Usage reported in CPU Hours
-    --------------------------------------------------------------------------------
-     Cluster         Account     Login     Proper Name     Used   Energy 
-    --------- --------------- --------- --------------- -------- -------- 
-    pleiadi-+           pippo    pippo+                      300        0
-    
-
-
 Transferring files to and from the clusters
 -------------------
 
@@ -711,6 +711,46 @@ If one large file is left half-transferred, you can resume it using the ``--part
    
 #. ``$ rsync --partial /path-on-your-laptop/my_large_file.txt pippo@pleiadi.oact.inaf.it:/path-on-Pleiadi/``
 #. ``$ rsync --partial pippo@pleiadi.oact.inaf.it:/path-on-Pleiadi/my_large_file.txt /path-on-your-laptop/``
+
+    
+
+Programs and libraries installed on the Pleiadi cluster
+====================
+
+The following programs and libraries are installed on the Pleiadi cluster.
+
+Python
+-------------------
+Both Python2 (version 2.7.5) and Python3 (version 3.6.8) are installed on the Pleiadi cluster. The ``pip3`` command for the management of the installation of the Python packages is installed on Pleiadi, with the following version::
+
+ $ pip3 --version
+   pip 9.0.3 from /usr/lib/python3.6/site-packages (python 3.6)
+   
+It is possible to define Python virtual environments for a cutomized installation of the needed Python packages with the ``pyvenv`` and the ``pyvenv-3.6`` commands.
+
+X11
+-------------------
+The graphic interface manager X11 is installed on the frontend node of the Pleiadi cluster.
+
+**N.B.: X11 is not installed on the compute nodes of the Pleiadi cluster**.
+
+To use the X11 tool you have to log in to the Pleiadi cluster with the ``-Y`` option, in this way:
+
+``$ ssh -Y <username>@pleiadi.oact.inaf.it``
+
+The X11 program allows to launch some graphic interfaces, such as the one of the Firefox browser with the following command:
+
+``$ firefox``
+
+
+Other examples for SLURM submission scripts
+====================
+
+The ``--array`` option
+-------------------
+
+(`array <https://slurm.schedmd.com/job_array.html>`_)
+
 
 
 
