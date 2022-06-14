@@ -49,7 +49,7 @@ The below table summarizes the main features of the Pleiadi cluster:
 +------------------------+-------------------------------------------+
 | Operating system       | CentOS Linux release 7.9.2009             |
 +------------------------+-------------------------------------------+
-| Scheduler              | SLURM                                     |
+| Scheduler              | SLURM 21.08.5                             |
 +------------------------+-------------------------------------------+
 | Storage volume         | 174 TB, BeeGFS parallel filesystem        |
 +------------------------+-------------------------------------------+
@@ -462,7 +462,7 @@ An example of submission script for a job running on one GPU node is::
  
  exit 0
 
-In this example the task allocated on the requested node will also run on the GPU of each the node. For this job, we loaded the ``nvhpc_2022_221/gcc-11.2.0`` module, that contains NVIDIA compilers, suitable for the compilation of GPU-based applications, and the ``gcc`` compiler of the ``11.2.0`` version. The ``nvhpc_2022_221/gcc-9.4.0`` and ``nvhpc_2022_221/gcc-10.3.0`` are also available, which contain the ``gcc`` compiler with the ``9.4.0`` and ``10.3.0`` versions, respectively.
+In this example the task allocated on the requested node will also run on the GPU of the node. For this job, we loaded the ``nvhpc_2022_221/gcc-11.2.0`` module, that contains NVIDIA compilers, suitable for the compilation of GPU-based applications, and the ``gcc`` compiler of the ``11.2.0`` version. The ``nvhpc_2022_221/gcc-9.4.0`` and ``nvhpc_2022_221/gcc-10.3.0`` are also available, which contain the ``gcc`` compiler with the ``9.4.0`` and ``10.3.0`` versions, respectively.
 
 
 Interactive jobs
@@ -475,39 +475,69 @@ If you need simply to have an interactive Bash session on a compute node, with t
 
 Doing that, you are submitting a 1-CPU, default memory, default duration job that will return a Bash prompt when it starts.
 
-If you need more flexibility, you will need to use the `salloc <https://slurm.schedmd.com/salloc.html>`_ command. The ``salloc`` command accepts the same parameters as ``sbatch`` as far as resource requirement is concerned. Once the allocation is granted, you can use ``srun`` the same way you would in a submission script.
+If you need more flexibility, you will need to use the `salloc <https://slurm.schedmd.com/salloc.html>`_ command. The ``salloc`` command accepts the same parameters as ``sbatch`` as far as resource requirement is concerned. Once the allocation is granted, you can use ``srun`` in the same way you would do in a submission script.
 
 
 Available modules
 ^^^^^^^^^^^^^^^^^^^^^^
 
-On the cluster Pleiadi, there are several available modules to set a customized environment according to the user’s needs. The available modules can be visualized with the following command::
+On the cluster Pleiadi, there are several available modules to set a customized environment according to the user’s needs. The available modules can be visualized with the command ``module available`` or with its shortened formula ``module av``::
 
- $ module available
-   --------------------------------------------------------- /opt/Modules/compilers/gcc ----------------------------------------------------------
+ $ module av
+   ------------------------------ /opt/Modules/compilers/gcc -------------------------------
    gcc-9.4.0  gcc-10.3.0  gcc-11.2.0  
 
-   -------------------------------------------------------- /opt/Modules/compilers/intel ---------------------------------------------------------
+   ----------------------------- /opt/Modules/compilers/intel ------------------------------
    intel_xe_2020_update4  
 
-   -------------------------------------------------------- /opt/Modules/compilers/nvidia --------------------------------------------------------
+   ----------------------------- /opt/Modules/compilers/nvidia -----------------------------
    nvhpc_2022_221/gcc-9.4.0  nvhpc_2022_221/gcc-10.3.0  nvhpc_2022_221/gcc-11.2.0  
 
-   ------------------------------------------------------- /opt/Modules/compilers/openmpi --------------------------------------------------------
-   openmpi-4.0.5-hfi  openmpi-4.1.2/gcc-9.4.0  openmpi-4.1.2/gcc-10.3.0  openmpi-4.1.2/gcc-11.2.0  
+   ---------------------------- /opt/Modules/compilers/openmpi -----------------------------
+   openmpi-4.0.5-hfi        openmpi-4.1.2/gcc-10.3.0  
+   openmpi-4.1.2/gcc-9.4.0  openmpi-4.1.2/gcc-11.2.0  
 
-   ------------------------------------------------------- /opt/Modules/compilers/mvapich --------------------------------------------------------
+   ---------------------------- /opt/Modules/compilers/mvapich -----------------------------
    mvapich2-2.3b-hfi  
 
-   ------------------------------------------------------- /opt/Modules/libraries/cfitsio --------------------------------------------------------
+   ---------------------------- /opt/Modules/libraries/cfitsio -----------------------------
    cfitsio-3.49  cfitsio-4.1.0  
 
-   Key:
-   modulepath
-   
-which can be shortened with:
+   ------------------------------ /opt/Modules/libraries/gsl -------------------------------
+   gsl-2.7.1  
 
-``$ module av``
+   ----------------------------- /opt/Modules/libraries/eigen ------------------------------
+   eigen-3.4.0  
+
+   ---------------------------- /opt/Modules/libraries/OpenBLAS ----------------------------
+   OpenBLAS-0.3.20  
+
+   ----------------------------- /opt/Modules/libraries/CCfits -----------------------------
+   CCfits-2.6  
+
+   ----------------------------- /opt/Modules/libraries/lapack -----------------------------
+   lapack-3.10.1  
+
+   ------------------------------ /opt/Modules/libraries/fftw ------------------------------
+   fftw-3.3.10  
+
+   --------------------------- /opt/Modules/libraries/armadillo ----------------------------
+   armadillo-11.0.1  
+
+   ------------------------------ /opt/Modules/libraries/hdf5 ------------------------------
+   hdf5-1.12.1  
+
+   -------------------------------- /opt/Modules/tools/casa --------------------------------
+   casa-pipeline-5.6.3-19  casa-release-5.8.0-109  
+   casa-pipeline-6.2.1-7   casa-release-6.4.4-31   
+
+   ---------------------------- /opt/Modules/tools/singularity -----------------------------
+   singularity-3.9.9  
+
+   Key:
+   modulepath 
+   
+   
 
 Compute nodes main features
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -601,15 +631,19 @@ The following storage quota are set for the different areas of the Pleiadi clust
 #. *home*: each user can use up to 20 GB of disk space.
 #. *work*: each user can use up to the quota defined in the request of the account.
 
-The users can request an increase of the group quota reserved for them sending us an e-mail at the address board.pleiadi@inaf.it, including the proper motivations for the request that will be successively evaluated by the local Staff. Possible quota extensions have to be an expiration, that must be as short as possible. Anyway, the period required for the quota extension cannot exceed the expiration date expected for the account.
+The users can request an increase of the quota reserved for them sending us an e-mail at the address board.pleiadi@inaf.it, including the proper motivations for the request that will be successively evaluated by the local Staff. Possible quota extensions have to have an expiration, that must be as short as possible. Anyway, the period required for the quota extension cannot exceed the expiration date expected for the account.
 
 For the accounts that will result in overquota to the monthly control following the expiration of the same, the data will be archived in advance as soon as the normal grace period granted (7 days) has passed. If at the next monthly check the account will still be overquota even after the anticipated creation of compressed archives, we will proceed to the early removal of archive files. 
 
-To monitor the used quota and the quota limits on the different areas of the Pleiadi cluster, you can use the following command:
+To monitor the used quota you can use the ``du -h`` command, to be used in the following way:
 
-``$ quota``
+``$ du -h /home/username``
 
-For more information about the ``quota`` command, see the webpage `quota <http://www.pleiadi.inaf.it>`_.
+to monitor the *home* quota or
+
+``$ du -h /mnt/beegfs/username``
+
+to monitor the *work* quota. A periodic control of the quota limits is performed by the staff members.
 
 
 Transferring files to and from the clusters
