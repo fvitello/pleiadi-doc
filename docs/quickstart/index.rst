@@ -147,7 +147,7 @@ Copying files (basics)
 Editing files
 -------------------
 
-To edit a file, the most convenient way is to use a terminal-based editor. Some example are Vi, Vim, Emacs, Nano, mcedit, ne, slap, micro, pico, Joe or mped. **Vi, Vim, Emacs, and Nano are preinstalled on Pleiadi**.
+To edit a file, the most convenient way is to use a terminal-based editor. Some example are Vi, Vim, Emacs, Nano, mcedit, ne, slap, micro, pico, Joe or mped. **Vi, Vim, Emacs, and Nano are already installed on Pleiadi**.
 
 SLURM quick start tutorial
 -------------------
