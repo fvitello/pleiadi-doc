@@ -384,6 +384,7 @@ In this example, we load the module ``gcc-11.2.0``, where the version of the com
 and the program that uses OpenMP launched by this job can be compiled with
  
 ``$ gcc -fopenmp my_OpenMP.c -o my_OpenMP_executable``
+The ``-fopenmp`` option might be omitted.
 
 
 Hybrid MPI+OpenMP parallel job
@@ -395,8 +396,8 @@ Some programs exploit both multi-process and shared memory paradigms. These kind
  #SBATCH --job-name=my_job_4   
  #SBATCH --time=10:00:00
  #SBATCH --nodes=2
- #SBATCH --ntasks-per-node=36
- #SBATCH --ntasks-per-socket=18
+ #SBATCH --ntasks-per-node=18
+ #SBATCH --ntasks-per-socket=9
  #SBATCH --cpus-per-task=2
  #SBATCH --mem=125000
  #SBATCH --error=job.%j.err
@@ -405,14 +406,14 @@ Some programs exploit both multi-process and shared memory paradigms. These kind
  #SBATCH --partition=debug
  
  cd /path/to/my_working_directory
- module load intel_xe_2020_update4
+ module load gcc-11.2.0 openmpi-4.1.2/gcc-11.2.0
  
  export OMP_NUM_THREADS=$SLURM_CPUS_PER_TASK
- srun ./my_MPI_OpenMP_executable
+ mpirun -np 36 ./my_MPI_OpenMP_executable
  
  exit 0
 
-In this case, Slurm will allocate ``--ntasks = --nodes x --ntasks-per-node = 2 x 36 = 72`` tasks on 2 nodes, and 2 CPUs for each task. In this way, the computation assigned to each MPI process will be further parallelized on 2 OpenMP threads.
+In this case, Slurm will allocate ``--ntasks = --nodes x --ntasks-per-node = 2 x 18 = 36`` tasks on 2 nodes, and 2 CPUs for each task. In this way, the computation assigned to each MPI process will be further parallelized on 2 OpenMP threads.
 
 
 GPU parallel job
@@ -426,25 +427,27 @@ It is important to note that the nodes having a GPU belong only to particular pa
 
  $ sinfo
    PARTITION  AVAIL  TIMELIMIT  NODES   STATE  NODELIST
-       debug     up   infinite      5   down*  r35c1s11,r35c3s[11-12],r35c5s10,r35c6s11
-       debug     up   infinite      2   alloc  r35c1s[01-02]
-       debug     up   infinite     65    idle  r35c1s[03-10,12],r35c2s[01-12],r35c3s[01-10],r35c4s[01-12],r35c5s[01-09,11-12],r35c6s[01-10,12]
-        gpu*     up   infinite      6    idle  r33c2s[01-06]
+       ...
+       gpu       up   infinite      6    idle  r33c2s[01-06]
+       v100      up   infinite      2    idle  r33c2s[01-02]
+       ...
         
-which indicates that the 6 nodes that have a GPU belong to the ``gpu`` partition. Therefore, in the submission script the
+which indicates that the 6 nodes that have a GPU belong to the ``gpu`` partition and that, in particular, the two nodes that have a GPU of the V100 type further belong to the v100 partition. Therefore, in the submission script the
 
 ``#SBATCH --partition=gpu``
 
+or the 
+
+``#SBATCH --partition=v100``
+
 option has to be set.
 
-An example of submission script for a job running on two GPU nodes is::
+An example of submission script for a job running on one GPU node is::
 
  #!/bin/bash
- #SBATCH --job-name=my_job_2   
+ #SBATCH --job-name=my_job_4   
  #SBATCH --time=10:00:00
- #SBATCH --nodes=2
- #SBATCH --ntasks-per-node=36
- #SBATCH --ntasks-per-socket=18
+ #SBATCH --ntasks=1
  #SBATCH --gres=gpu:1
  #SBATCH --mem=125000
  #SBATCH --error=job.%j.err
@@ -459,7 +462,7 @@ An example of submission script for a job running on two GPU nodes is::
  
  exit 0
 
-In this example each of the 72 tasks allocated in the 2 requested node will also run on the GPU of each of the 2 nodes. For this job, we loaded the ``nvhpc_2022_221/gcc-11.2.0`` module, that contains NVIDIA compilers, suitable for the compilation of GPU-based applications, and the ``gcc`` compiler of the ``11.2.0`` version. The ``nvhpc_2022_221/gcc-9.4.0`` and ``nvhpc_2022_221/gcc-10.3.0`` are also available, which contain the ``gcc`` compiler with the ``9.4.0`` and ``10.3.0`` versions, respectively.
+In this example the task allocated on the requested node will also run on the GPU of each the node. For this job, we loaded the ``nvhpc_2022_221/gcc-11.2.0`` module, that contains NVIDIA compilers, suitable for the compilation of GPU-based applications, and the ``gcc`` compiler of the ``11.2.0`` version. The ``nvhpc_2022_221/gcc-9.4.0`` and ``nvhpc_2022_221/gcc-10.3.0`` are also available, which contain the ``gcc`` compiler with the ``9.4.0`` and ``10.3.0`` versions, respectively.
 
 
 Interactive jobs
