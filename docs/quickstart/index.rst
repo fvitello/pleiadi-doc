@@ -546,7 +546,7 @@ On the cluster Pleiadi, there are several available modules to set a customized 
    armadillo-11.0.1  
 
    ------------------------------ /opt/Modules/libraries/hdf5 ------------------------------
-   hdf5-1.12.1  
+   hdf5-1.12.1  hdf5-1.12.1_gcc-11.2.0
 
    -------------------------------- /opt/Modules/tools/casa --------------------------------
    casa-pipeline-5.6.3-19  casa-release-5.8.0-109  
