@@ -2,6 +2,8 @@
 Userguide for Pleiadi cluster
 *******************
 
+Valentina Cesare
+
 .. contents:: Table of Contents
 
 Note: along the entire document the dollar $ sign indicates the shell prompt.
