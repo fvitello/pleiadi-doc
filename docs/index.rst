@@ -3,9 +3,6 @@ PLEIADI
 -----------------------------------------------------
 
 PLEIADI is a project by INAF - National Institute for Astrophysics, Italy. 
-It is devoted to XXX.  
-
-An overview of the systems can be found here XXXX.
 
 Pleiadi documentation
 ====================
