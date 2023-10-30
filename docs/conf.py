@@ -26,6 +26,7 @@ copyright = author
 language = 'en'
 
 extensions = [
+    'sphinx_rtd_theme',
     'sphinx.ext.intersphinx',
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
