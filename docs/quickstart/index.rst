@@ -29,7 +29,7 @@ Cluster structure
 
 The Pleiadi cluster has the following components:
 
-Catania:
+Catania
 ^^^^^^^^^^^^^^^^^^^^^^
 
 #. **1 frontend node**
@@ -58,7 +58,7 @@ The below table summarizes the main features of the Catania Pleiadi cluster:
 +------------------------+----------------------------------------------------------+
 
 
-Trieste:
+Trieste
 ^^^^^^^^^^^^^^^^^^^^^^
 
 #. **1 frontend node**
