@@ -2,7 +2,10 @@
 PLEIADI
 -----------------------------------------------------
 
-PLEIADI is a project by INAF - National Institute for Astrophysics, Italy. 
+PLEIADI is a project by INAF - National Institute for Astrophysics, offering high-performance computing (HPC) and high-throughput computing (HTC) resources.
+
+Individual researchers and teams belonging to research projects, European projects, PRIN, INAF mainstream projects, scientific missions, etc. that require computing can apply requesting the resources.
+
 
 Pleiadi documentation
 ====================
