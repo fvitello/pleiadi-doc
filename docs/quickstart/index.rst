@@ -30,6 +30,7 @@ Cluster structure
 The Pleiadi cluster has the following components:
 
 Catania:
+^^^^^^^^^^^^^^^^^^^^^^
 
 #. **1 frontend node**
 #. **72 compute nodes without GPUs** (12 with a RAM memory of 256 GB and 60 with a RAM memory of 128 GB)
@@ -58,6 +59,7 @@ The below table summarizes the main features of the Catania Pleiadi cluster:
 
 
 Trieste:
+^^^^^^^^^^^^^^^^^^^^^^
 
 #. **1 frontend node**
 #. **60 compute nodes without GPUs** (all with 256 GB of RAM)
