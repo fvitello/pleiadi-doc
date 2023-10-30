@@ -87,6 +87,33 @@ The below table summarizes the main features of the Trieste Pleiadi cluster:
 +------------------------+----------------------------------------------------------+
 
 
+Bologna
+^^^^^^^^^^^^^^^^^^^^^^
+
+#. **1 frontend node for scheduling only**
+#. **48 compute nodes without GPUs**
+
+The below table summarizes the main features of the Bologna Pleiadi cluster:
+
++------------------------+----------------------------------------------------------+
+| Architecture           | Cluster Linux x86_64                                     |
++------------------------+----------------------------------------------------------+
+| Nodes interconnection  | Omni-Path HFI Silicon 100 Series, 100 Gbits interconnect |
++------------------------+----------------------------------------------------------+
+| Service network        | Ethernet 1 Gbits                                         |
++------------------------+----------------------------------------------------------+
+| CPU Model              | Intel(R) Xeon(R) CPU E5-2697 v4 @ 2.30GHz                |
++------------------------+----------------------------------------------------------+
+| Number of nodes        | 48                                                       |
++------------------------+----------------------------------------------------------+
+| Operating system       | Debian 11                                                |
++------------------------+----------------------------------------------------------+
+| Workload manager       | SLURM 20.11.7                                            |
++------------------------+----------------------------------------------------------+
+| Storage volume         | 600 TB, Lustre parallel filesystem                       |
++------------------------+----------------------------------------------------------+
+
+
 Quick start – First steps 
 ====================
 
