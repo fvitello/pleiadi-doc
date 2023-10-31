@@ -2,7 +2,7 @@
 Cluster structure
 *******************
 
-The Pleiadi cluster has the following components:
+The Pleiadi infrastructures is distributed on the following sites:
 
 Catania
 ^^^^^^^^^^^^^^^^^^^^^^
