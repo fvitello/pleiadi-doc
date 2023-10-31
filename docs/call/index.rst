@@ -9,7 +9,7 @@ INAF  -  USC VIII - Computing
 INAF's USC VIII-Computing issues a new call (the third one) for the use of HPC/HTC computing resources and for the availability of data storage spaces.
 
 
-In particular, (i) the use of the INAF calculation system called PLEIADI will be offered, the technical characteristics of which are described on the site https://pleiadi.readthedocs.io/en/latest/quickstart/index.html#cluster-structure , (ii) the use of the Leonardo BOOSTER calculation system will also be available, the technical characteristics of which are described on the site https://wiki.u-gov.it/confluence/display/SCAIUS, and (iii) the long-term conservation system of scientific products at IA2, described on the site https://www.ia2.inaf.it/index.php/ia2-services/data-sharing-preservation
+In particular, (i) the use of the INAF calculation system called PLEIADI will be offered, the technical characteristics of which are described on the `site <https://pleiadi.readthedocs.io/en/latest/clusters/index.html>`_ , (ii) the use of the Leonardo BOOSTER calculation system will also be available, the technical characteristics of which are described on the `site <https://wiki.u-gov.it/confluence/display/SCAIUS>`_, and (iii) the long-term conservation system of scientific products at IA2, described on the `site <https://www.ia2.inaf.it/index.php/ia2-services/data-sharing-preservation>`_
 
 
 Who can apply
