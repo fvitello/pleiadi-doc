@@ -7,6 +7,8 @@ import re
 # Prefer to use the version of the theme in this repo
 # and not the installed version of the theme.
 sys.path.insert(0, os.path.abspath('..'))
+sys.path.append(os.path.abspath('./call/'))
+sys.path.append(os.path.abspath('./clusters/'))
 sys.path.append(os.path.abspath('./managingfiles/'))
 sys.path.append(os.path.abspath('./quickstart/'))
 sys.path.append(os.path.abspath('./softwarespecific/'))
