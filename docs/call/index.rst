@@ -1,8 +1,8 @@
 ##################
-INAF  -  USC VIII - Computing
+Call for Computing and archiving resources
 ##################
 *********
-Call for Computing and archiving resources
+INAF  -  USC VIII - Computing
 *********
 .. centered:: (closing date 30/11/2023)
 
