@@ -1,4 +1,3 @@
-.. centered::
 ##################
 INAF  -  USC VIII - Computing
 ##################
