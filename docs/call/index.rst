@@ -10,6 +10,7 @@ INAF's USC VIII-Computing issues a new call (the third one) for the use of HPC/H
 
 
 In particular, 
+
 (i) the use of the INAF computing  system called PLEIADI will be offered, the technical characteristics of which are described on the `site <https://pleiadi.readthedocs.io/en/latest/clusters/index.html>`_, 
 
 (ii) the use of the Leonardo BOOSTER computing system will also be available, the technical characteristics of which are described on the `site <https://wiki.u-gov.it/confluence/display/SCAIUS/UG3.2%3A+LEONARDO+UserGuide>`_, 
