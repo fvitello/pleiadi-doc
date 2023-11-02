@@ -11,7 +11,9 @@ INAF's USC VIII-Computing issues a new call (the third one) for the use of HPC/H
 
 In particular, 
 (i) the use of the INAF computing  system called PLEIADI will be offered, the technical characteristics of which are described on the `site <https://pleiadi.readthedocs.io/en/latest/clusters/index.html>`_, 
+
 (ii) the use of the Leonardo BOOSTER computing system will also be available, the technical characteristics of which are described on the `site <https://wiki.u-gov.it/confluence/display/SCAIUS/UG3.2%3A+LEONARDO+UserGuide>`_, 
+
 (iii) the long-term preservation system of scientific products at IA2 will also be available, with characteristics described on the `site <https://www.ia2.inaf.it/index.php/ia2-services/data-sharing-preservation>`_, 
 
 
@@ -42,10 +44,11 @@ Projects can also require up to 4TB of work storage. Beyond these limits, additi
 
 
 1 TB/year  is equivalent to:
-500 Standard Hours on DRES-ARCHIVE;
-800 Standard Hours on DRES-FS;
-800 Standard Hours on $WORK per HPC
-More information on CINECA storage systems can be found on the `Cineca wiki site <https://wiki.u-gov.it/confluence/display/SCAIUS/UG2.5%3A+Data+storage+and+FileSystems>`_, 
+    - 500 Standard Hours on DRES-ARCHIVE;
+    - 800 Standard Hours on DRES-FS;
+    - 800 Standard Hours on $WORK per HPC
+
+More information on CINECA storage systems can be found on the `Cineca wiki site <https://wiki.u-gov.it/confluence/display/SCAIUS/UG2.5%3A+Data+storage+and+FileSystems>`_. 
 
 
 
@@ -65,10 +68,15 @@ Proposal submission
 ^^^^^^^^^^^^^^^^^^^^^^
 
 Proposals must be submitted by completing the form available at the `link <https://forms.gle/QD2gGZhmgbvW1ATi7s>`_ starting from 01/11/2023 and by 11.59pm on 30/11/2023.
+
 In the application, the proposing research groups will be asked to specify in detail the scientific background, the technical characteristics of the code, detailing libraries, computing environment, compilers, paradigm and degree of parallelism. Furthermore, you will be asked to describe any constraints on how resources are used (for example dedicated nodes, minimum number of nodes required per run, execution time of a single run, total memory for a single job,....etc) and to indicate the period during which the calculation time will be used.
+
 Proposers will also be asked to specify the storage space necessary for the execution of the code. This storage, not subject to backup, will be available for up to 6 months from the end of the project, and is to be understood as functional for data production (i.e. it does not correspond to preservation storage). If long-term saving of the data produced is necessary, it will be necessary to submit a further and separate request, again via the proposal submission form, for the saving space on Tape Library IA2.
+
 Allocated time that is not used in the requested period cannot be recovered later.
+
 Similarly, the application for long-term data preservation space must contain all the data necessary for the evaluation of the request: size of preservation storage space requested; type, format and size of each scientific product; description of the structure of the collection; description of the expected frequency of access as well as the data access policy; any future plans for publishing the data; all information deemed relevant for correct data preservation following the FAIR principles.
+
 During the proposal evaluation phase, the Panel may request clarifications and further information from the proposers. Communication of any allocation of the requested resources will normally take place within 4-5 weeks of the closing of the call.
 
 
