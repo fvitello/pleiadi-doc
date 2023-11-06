@@ -44,14 +44,15 @@ Long term Storage (IA2)
 +------------------------------------------------------+------------+------------+
 | Project Title                                        | Start date | End date   |
 +======================================================+============+============+
-| Radiogalaxies in cosmological simulations (RADGAL)   | 1/6/2023   | 31/5/2025  |
+| Radiogalaxies in cosmological simulations            | 1/6/2023   | 31/5/2025  |
+| (RADGAL)                                             |            |            |
 +------------------------------------------------------+------------+------------+
-| Relativistic jets from accreting compact objects<BR> |            |            |
-| and unknown Gamma ray sources                        | 1/8/2023   | 1/8/2030   |
+| Relativistic jets from accreting compact objects     | 1/8/2023   | 1/8/2030   |
+| and unknown Gamma ray sources                        |            |            |
 +------------------------------------------------------+------------+------------+
-| AGILE Spacecraft Long-term Data Storage of AIV,<BR>  |            |            |
-| Calibration, Simulation and Commissioning phases.    | 1/6/2023   | 1/6/2033   |
+| AGILE Spacecraft Long-term Data Storage of AIV,      | 1/6/2023   | 1/6/2033   |
+| Calibration, Simulation and Commissioning phases.    |            |            |
 +------------------------------------------------------+------------+------------+
-| Unlocking the potential of JWST, Euclid, and SKA<BR> |            |            | 
-| high-z galaxy evolution and cosmology                | 1/6/2023   | 31/12/2040 |
+| Unlocking the potential of JWST, Euclid, and SKA -   | 1/6/2023   | 31/12/2040 |
+| high-z galaxy evolution and cosmology                |            |            |
 +------------------------------------------------------+------------+------------+
