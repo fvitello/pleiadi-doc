@@ -2,7 +2,6 @@
 Call #2 for Computing and archiving resources
 ##################
 
----------------------
 .. raw:: html
 
    <h2> Assigned Resources </h2>
