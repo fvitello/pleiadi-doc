@@ -81,11 +81,13 @@ Long term Storage (IA2)
   :width: 100%
   :widths: 3 1 1
 
-  =====              =====          =====
+  ========================================================               ==========   ==========
   Project Title      Start date     End date
-  =====              =====          =====
-  Radiogalaxies in cosmological simulations |br|(RADGAL)                 1/6/2023     31/5/2025
-  =====             =====            =====
+  ========================================================               ==========   ==========
+  Radiogalaxies in cosmological simulations (RADGAL)                     01/06/2023   31/05/2025
+  Relativistic jets from accreting compact objects |br|                  01/08/2023   01/08/2030
+  and unknown Gamma ray sources
+  ========================================================               ==========   ==========
 
 .. |br| raw:: html
 
