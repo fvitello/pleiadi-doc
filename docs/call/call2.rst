@@ -75,3 +75,22 @@ Long term Storage (IA2)
            <td>31/12/2040</td>
        </tr>
    </table>
+
+
+.. table:: Truth table for "not"
+  :width: 20%
+  :widths: 1 3 1
+
+  =====  =====    =====
+  A      not A    Note
+  =====  =====    =====
+  False  True     Text here
+  True   False    Comment here
+         False
+  False  True     Text here |br| line break in table here
+  True   False
+  =====  =====    =====
+
+.. |br| raw:: html
+
+     <br>
