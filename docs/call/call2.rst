@@ -15,7 +15,7 @@ Pleiadi
 +------------------------------------------------------+------------+-----------+
 | Project Title                                        | Start date | End date  |
 +======================================================+============+===========+
-| Radiogalaxies in cosmological simulations (RADGAL)   | 1/6/2023   | 31/5/2025 |
+| XXX                                                  | 1/6/2023   | 31/5/2025 |
 +------------------------------------------------------+------------+-----------+
 
 *********
@@ -27,4 +27,10 @@ Long term Storage (IA2)
 | Project Title                                        | Start date | End date  |
 +======================================================+============+===========+
 | Radiogalaxies in cosmological simulations (RADGAL)   | 1/6/2023   | 31/5/2025 |
++------------------------------------------------------+------------+-----------+
+| Relativistic jets from accreting compact objects and unknown Gamma ray sources   | 1/8/2023   | 1/8/2030 |
++------------------------------------------------------+------------+-----------+
+| AGILE Spacecraft Long-term Data Storage of AIV, Calibration, Simulation and Commissioning phases.   | 1/6/2023   | 1/6/2033 |
++------------------------------------------------------+------------+-----------+
+| Unlocking the potential of JWST, Euclid, and SKA - high-z galaxy evolution and cosmology   | 1/6/2023   | 31/12/2040 |
 +------------------------------------------------------+------------+-----------+
