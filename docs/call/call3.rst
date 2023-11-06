@@ -1,9 +1,13 @@
 ##################
 Call #3 for Computing and archiving resources
 ##################
+
 .. raw:: html
+
    <h2> INAF  -  USC VIII - Computing </h2>
+   
 ---------------------
+
 .. centered:: (closing date 30/11/2023)
 
 INAF's USC VIII-Computing issues a new call (the third one) for the use of HPC/HTC computing resources and for the availability of data storage spaces.
