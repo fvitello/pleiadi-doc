@@ -25,7 +25,7 @@ Bologna
   Simulation based inference for SKA                                                                        05/06/2023   05/12/2023
   The Milky Way Bulge view with Pleiadi                                                                     01/12/2023   30/06/2024
   Modelling the multi-wavelength galactic outflows of the Milky Way                                         16/08/2023   15/02/2024
-  GaiaUnlimited: Modelling the Milky Way structure & Selection |br| Function with large scale surveys       01/07/2023   31/12/2023                                16/08/2023   15/02/2024
+  GaiaUnlimited: Modelling the Milky Way structure & Selection |br| Function with large scale surveys       01/07/2023   31/12/2023
   ======================================================================================================    ==========   ==========
 
 .. |br| raw:: html
