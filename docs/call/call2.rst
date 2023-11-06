@@ -41,18 +41,37 @@ Long term Storage (IA2)
 *********
 
 
-+------------------------------------------------------+------------+------------+
-| Project Title                                        | Start date | End date   |
-+======================================================+============+============+
-| Radiogalaxies in cosmological simulations            | 1/6/2023   | 31/5/2025  |
-| (RADGAL)                                             |            |            |
-+------------------------------------------------------+------------+------------+
-| Relativistic jets from accreting compact objects     | 1/8/2023   | 1/8/2030   |
-| and unknown Gamma ray sources                        |            |            |
-+------------------------------------------------------+------------+------------+
-| AGILE Spacecraft Long-term Data Storage of AIV,      | 1/6/2023   | 1/6/2033   |
-| Calibration, Simulation and Commissioning phases.    |            |            |
-+------------------------------------------------------+------------+------------+
-| Unlocking the potential of JWST, Euclid, and SKA -   | 1/6/2023   | 31/12/2040 |
-| high-z galaxy evolution and cosmology                |            |            |
-+------------------------------------------------------+------------+------------+
+.. raw:: html
+
+   <table>
+       <colgroup>
+           <col style="width: 40%">
+           <col style="width: 30%">
+           <col style="width: 30%">
+       </colgroup>
+       <tr>
+           <th>Project Title</th>
+           <th>Start date</th>
+           <th>End date</th>
+       </tr>
+       <tr>
+           <td>Radiogalaxies in cosmological simulations <br>(RADGAL)</td>
+           <td>1/6/2023</td>
+           <td>31/5/2025</td>
+       </tr>
+       <tr>
+           <td>Relativistic jets from accreting compact objects <br>and unknown Gamma ray sources</td>
+           <td>1/8/2023</td>
+           <td>1/8/2030</td>
+       </tr>
+       <tr>
+           <td>AGILE Spacecraft Long-term Data Storage of AIV, Calibration, Simulation and Commissioning phases.</td>
+           <td>1/6/2023</td>
+           <td>1/6/2033</td>
+       </tr>
+       <tr>
+           <td>Unlocking the potential of JWST, Euclid, and SKA - high-z galaxy evolution and cosmology</td>
+           <td>1/6/2023</td>
+           <td>31/12/2040</td>
+       </tr>
+   </table>
