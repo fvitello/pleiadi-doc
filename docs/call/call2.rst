@@ -14,7 +14,7 @@ Pleiadi
 
 Bologna
 ^^^^^^^^^^^^^^^^^^^^^^
-.. table:: Assigned resouces
+.. table::
   :width: 100%
   :widths: 3 1 1
 
@@ -34,7 +34,7 @@ Bologna
 
 Catania
 ^^^^^^^^^^^^^^^^^^^^^^
-.. table:: Assigned resouces
+.. table::
   :width: 100%
   :widths: 3 1 1
 
@@ -56,7 +56,7 @@ Catania
 
 Trieste
 ^^^^^^^^^^^^^^^^^^^^^^
-.. table:: Assigned resouces
+.. table::
   :width: 100%
   :widths: 3 1 1
 
@@ -83,7 +83,7 @@ Trieste
 Long term Storage (IA2)
 *********
 
-.. table:: Assigned resouces
+.. table::
   :width: 100%
   :widths: 3 1 1
 
