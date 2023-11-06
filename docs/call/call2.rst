@@ -8,8 +8,8 @@ Call #2 for Computing and archiving resources
    
 ---------------------
 
-.. list-table:: Title
-   :widths: 25 25 50
+.. list-table:: Assigned Resources
+   :widths: 25 50 25 25
    :header-rows: 1
 
    * - e-infra
