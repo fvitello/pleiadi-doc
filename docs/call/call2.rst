@@ -77,19 +77,15 @@ Long term Storage (IA2)
    </table>
 
 
-.. table:: Truth table for "not"
-  :width: 20%
-  :widths: 1 3 1
+.. table:: Assigned resouces
+  :width: 100%
+  :widths: 3 1 1
 
-  =====  =====    =====
-  A      not A    Note
-  =====  =====    =====
-  False  True     Text here
-  True   False    Comment here
-         False
-  False  True     Text here |br| line break in table here
-  True   False
-  =====  =====    =====
+  =====              =====          =====
+  Project Title      Start date     End date
+  =====              =====          =====
+  Radiogalaxies in cosmological simulations |br|(RADGAL)                 1/6/2023     31/5/2025
+  =====             =====            =====
 
 .. |br| raw:: html
 
