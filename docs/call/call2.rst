@@ -63,16 +63,16 @@ Trieste
   =======================================================================================================================   ==========   ==========
   Project Title                                                                                                             Start date     End date
   =======================================================================================================================   ==========   ==========
-  Stellar abundances for next-coming large-scale surveys                                                                    01/06/2023   01/12/2023
-  A new General Relativistic spectral model for |br| the soft state of NS-LMXBs                                             28/08/2023   12/09/2023
-  Modelling kilonovae in the multi-messenger gravitational-wave era                                                         09/01/2023   03/01/2024
+  Stellar abundances for next-coming large-scale surveys                                                                    01/08/2023   31/01/2024
+  A new General Relativistic spectral model for |br| the soft state of NS-LMXBs                                             01/08/2023   31/01/2024
+  Modelling kilonovae in the multi-messenger gravitational-wave era                                                         01/08/2023   31/01/2024
   Simulating the Euclid universe with Pinocchio                                                                             01/08/2023   31/01/2024
-  The analysis of CHEOPS and GAPS-2 data for exoplanet |br| discovery and characterization                                  01/06/2023   31/12/2023
-  Unlocking the potential of JWST, Euclid, and SKA |br| - high-z galaxy evolution and cosmology                             01/10/2023   30/04/2024
+  The analysis of CHEOPS and GAPS-2 data for exoplanet |br| discovery and characterization                                  01/08/2023   31/01/2024
+  Unlocking the potential of JWST, Euclid, and SKA |br| - high-z galaxy evolution and cosmology                             01/08/2023   31/01/2024
   High-resolution simulations of emitting gas in various |br| dark matter models around a massive node of the cosmic web    01/08/2023   31/01/2024
-  Evolving cosmological codes to the next step                                                                              01/08/2023   30/03/2024
-  Tracing Supermassive black holes in protocluster regions                                                                  01/07/2023   31/12/2023
-  High Perfomance implementation of unsupervised machine learning                                                           01/09/2023   01/03/2024
+  Evolving cosmological codes to the next step                                                                              01/08/2023   31/01/2024
+  Tracing Supermassive black holes in protocluster regions                                                                  01/08/2023   31/01/2024
+  High Perfomance implementation of unsupervised machine learning                                                           01/08/2023   31/01/2024
   =======================================================================================================================   ==========   ==========
 
 .. |br| raw:: html
