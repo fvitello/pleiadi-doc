@@ -19,7 +19,7 @@ Bologna
   :widths: 3 1 1
 
   ============  ======================================================================================================    ==========   ==========
-  PI            Project Title                                                                                             Start date    End date
+  PI            Project Title                                                                                             Start date   End date
   ============  ======================================================================================================    ==========   ==========
        x        Analysis of the Karhunen-Loève Transform Eigenfunctions                                                   04/09/2023   03/03/2024
        x        Simulation based inference for SKA                                                                        05/06/2023   05/12/2023
@@ -39,7 +39,7 @@ Catania
   :widths: 3 1 1
 
   ============  ==============================================================================================================    ==========   ==========
-  PI            Project Title                                                                                                     Start date     End date
+  PI            Project Title                                                                                                     Start date   End date
   ============  ==============================================================================================================    ==========   ==========
   Riggi         PNRR-CN: Deep Learning for radio source analysis |br| in SKA & precursors                                         01/08/2023   31/01/2024
   x             Automated Analysis of Large-Scale Stellar Spectra                                                                 01/08/2023   31/01/2024
@@ -61,7 +61,7 @@ Trieste
   :widths: 3 1 1
 
   ============  =======================================================================================================================   ==========   ==========
-  PI            Project Title                                                                                                             Start date     End date
+  PI            Project Title                                                                                                             Start date   End date
   ============  =======================================================================================================================   ==========   ==========
         x       Stellar abundances for next-coming large-scale surveys                                                                    01/08/2023   29/02/2024
          x      A new General Relativistic spectral model for |br| the soft state of NS-LMXBs                                             01/08/2023   29/02/2024
