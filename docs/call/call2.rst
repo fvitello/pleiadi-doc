@@ -22,10 +22,6 @@ Bologna
   PI            Project Title                                                                                             Start date  End date
   ============  ======================================================================================================    ==========  ==========
   x             Analysis of the Karhunen-Loève Transform Eigenfunctions                                                   04/09/2023  03/03/2024
-  x             Simulation based inference for SKA                                                                        05/06/2023  05/12/2023
-  x             The Milky Way Bulge view with Pleiadi                                                                     01/12/2023  01/06/2024
-  x             Modelling the multi-wavelength galactic outflows of the Milky Way                                         16/08/2023  15/02/2024
-  x             GaiaUnlimited: Modelling the Milky Way structure & Selection |br| Function with large scale surveys       01/07/2023  31/12/2023
   ============  ======================================================================================================    ==========  ==========
 
 .. |br| raw:: html
