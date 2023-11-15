@@ -39,7 +39,7 @@ Catania
   :widths: 3 1 1
 
   ==============  ==============================================================================================================    ==========   ==========
-  PI              Project Title                                                                                                     Start date     End date
+  PI              Project Title                                                                                                     Start date   End date
   ==============  ==============================================================================================================    ==========   ==========
   Riggi           PNRR-CN: Deep Learning for radio source analysis |br| in SKA & precursors                                         01/08/2023   31/01/2024
   Spina           Automated Analysis of Large-Scale Stellar Spectra                                                                 01/08/2023   31/01/2024
