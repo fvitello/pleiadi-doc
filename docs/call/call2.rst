@@ -42,12 +42,12 @@ Catania
   PI              Project Title                                                                                                     Start date     End date
   ==============  ==============================================================================================================    ==========   ==========
   Riggi           PNRR-CN: Deep Learning for radio source analysis |br| in SKA & precursors                                         01/08/2023   31/01/2024
-                  Automated Analysis of Large-Scale Stellar Spectra                                                                 01/08/2023   31/01/2024
-                  Unlock the full power of the Gaia spectroscopic data set                                                          01/08/2023   31/01/2024
-                  Astrophysical parameters of young stars from advanced |br| spectroscopic inference 4 (APsYoungStars4)             01/08/2023   31/01/2024
-                  Numerical models of AGNs' feedback and backflows |br| including Relativistic Thermodynamics                       03/08/2023   03/02/2024
+  Spina           Automated Analysis of Large-Scale Stellar Spectra                                                                 01/08/2023   31/01/2024
+  Spina           Unlock the full power of the Gaia spectroscopic data set                                                          01/08/2023   31/01/2024
+  Lanzafame       Astrophysical parameters of young stars from advanced |br| spectroscopic inference 4 (APsYoungStars4)             01/08/2023   31/01/2024
+  Antonuccio      Numerical models of AGNs' feedback and backflows |br| including Relativistic Thermodynamics                       03/08/2023   03/02/2024
   Tuccari         VisIVO Server                                                                                                     01/08/2023   31/01/2024
-                  Spot modelling and optimized radial velocity extraction |br| in young/active fast rotating stars using SpotCCF    01/09/2023   20/01/2024
+  Di Maio         Spot modelling and optimized radial velocity extraction |br| in young/active fast rotating stars using SpotCCF    01/09/2023   20/01/2024
   ==============  ==============================================================================================================    ==========   ==========
 
 .. |br| raw:: html
