@@ -12,6 +12,11 @@ Call #2 for Computing and archiving resources
 Pleiadi
 *********
 
+.. raw:: html
+
+   <h3> Resouces available from 01/08/2023 to 31/01/2023</h3>
+   
+
 Bologna
 ^^^^^^^^^^^^^^^^^^^^^^
 .. table::
