@@ -131,7 +131,7 @@ To obtain information about SLURM on your cluster the ``sinfo`` and the ``squeue
 
 The ``sinfo`` command provides information about:
 
-#. **PARTITION**: The partitions available on the cluster, where a partition is a set of compute nodes logically grouped and dedicated to different tasks (e.g. batch processing, debugging, post processing, or visualization). The default partition is marked with an asterisk. The partitions present on Pleiadi are ``debug``, ``gpu``, ``v100``, and ``256g``, where ``256g`` is the default partition;
+#. **PARTITION**: The partitions available on the cluster, where a partition is a set of compute nodes logically grouped and dedicated to different tasks (e.g. batch processing, debugging, post processing, or visualization). The default partition is marked with an asterisk. The partitions present on Pleiadi are ``128g``, ``256g``, ``gpu``, and ``v100`` where ``128g`` is the default partition;
 #. **AVAIL**: The state of the partitions;
 #. **TIMELIMIT**: The maximum time limit for a job launched by any user in days-hours:minutes:seconds. If the parameter is “infinite” it means no time limit is set for that partition;
 #. **NODES**: The number of nodes with a particular configuration in each partition;
