@@ -72,7 +72,7 @@ As in the previous call, INAF provides long-term data storage spaces, even compl
 Proposal submission
 ^^^^^^^^^^^^^^^^^^^^^^
 
-Proposals must be submitted by completing the form available at the `link <https://forms.gle/QD2gGZhmgbvW1ATi7s>`_ starting from 01/11/2023 and by 11.59pm on 30/11/2023.
+Proposals must be submitted by completing the form available at the `link <https://forms.gle/vwBXwqrJ4PKCP1y28>`_ starting from 01/11/2023 and by 11.59pm on 30/11/2023.
 
 In the application, the proposing research groups will be asked to specify in detail the scientific background, the technical characteristics of the code, detailing libraries, computing environment, compilers, paradigm and degree of parallelism. Furthermore, you will be asked to describe any constraints on how resources are used (for example dedicated nodes, minimum number of nodes required per run, execution time of a single run, total memory for a single job,....etc) and to indicate the period during which the calculation time will be used.
 
