@@ -14,7 +14,7 @@ Pleiadi
 
 .. raw:: html
 
-   <h3> Resouces available from 01/08/2023 to 31/01/2023</h3>
+   <h3> Resouces available from 01/08/2023 to 31/01/2024</h3>
    
 
 Bologna
