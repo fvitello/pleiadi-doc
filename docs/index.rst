@@ -13,7 +13,7 @@ Pleiadi documentation
    :maxdepth: 1
 
    
-   sub_doc
+   sub_doc.rst
    docs/license.rst
 
 
