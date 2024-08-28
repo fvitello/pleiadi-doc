@@ -13,10 +13,7 @@ Pleiadi documentation
    :maxdepth: 1
 
    
-   index.rst
-   call/index.rst
-   clusters/index.rst
-   quickstart/index.rst 
+   sub_doc.rst 
    docs/license.rst
 
 
