@@ -2,8 +2,10 @@
 Call #2 for Computing and archiving resources
 ##################
 
- .. toctree::
+.. toctree::
    :maxdepth: 1
-    assigned.rst
+   :caption: Contents:
+
+   assigned
 
 
