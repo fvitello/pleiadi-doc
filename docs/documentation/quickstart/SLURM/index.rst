@@ -198,5 +198,5 @@ Parallel jobs
 The example in the previous section illustrates a *serial* job which runs a single CPU on a single node, and that does not exploit the resources available in the multiple nodes in the cluster.
 
 We illustrate below some examples of *parallel* jobs. 
-`CLICK HERE <parallelJob/index.rst>`_.
+`CLICK HERE <parallel_jobs/index.rst>`_.
 
