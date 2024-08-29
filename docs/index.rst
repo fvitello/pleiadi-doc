@@ -16,11 +16,8 @@ Pleiadi documentation
    documentation/call/index.rst
    documentation/clusters/index.rst
    documentation/quickstart/index.rst
+   documentation/contributors/index.rst
 
 
-.. _contributors:
-------------
-.. toctree::
-   :maxdepth: 1
  
-    documentation/contributors/index.rst
+   
