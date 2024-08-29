@@ -6,7 +6,7 @@ Account and resources request
 
 The PLEIADI@INAF project provides HPC computing resources and technical support for research and teaching activities. 
 
-The computing resources (see Section :doc:`Cluster structure <documentation/clusters/index.rst>`) are managed by a board (board.pleiadi@inaf.it) which assigns calculation time and credentials for resources usage. 
+The computing resources (see Section :doc:`Cluster structure <documentation/clusters/index>`) are managed by a board (board.pleiadi@inaf.it) which assigns calculation time and credentials for resources usage. 
 
 To request calculation resources, you need to fill in an application form. The form and other information concerning the calculation resources can be found at the website `Resources <https://www.ict.inaf.it/computing/Pleiadi/>`_.
 
