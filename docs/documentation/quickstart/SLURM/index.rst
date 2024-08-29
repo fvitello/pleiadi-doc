@@ -193,10 +193,10 @@ Doing that, you are submitting a 1-CPU, default memory, default duration job tha
 If you need more flexibility, you will need to use the `salloc <https://slurm.schedmd.com/salloc.html>`_ command. The ``salloc`` command accepts the same parameters as ``sbatch`` as far as resource requirement is concerned. Once the allocation is granted, you can use ``srun`` in the same way you would do in a submission script.
 
 
-Parallel jobs
-^^^^^^^^^^^^^^
-The example in the previous section illustrates a *serial* job which runs a single CPU on a single node, and that does not exploit the resources available in the multiple nodes in the cluster.
+    Parallel jobs
+    ^^^^^^^^^^^^^^
+    The example in the previous section illustrates a *serial* job which runs a single CPU on a single node, and that does not exploit the resources available in the multiple nodes in the cluster.
 
-We illustrate below some examples of *parallel* jobs. 
-parallel_jobs/index.rst.
+    We illustrate below some examples of *parallel* jobs. 
+    See the details in :doc:`parallel jobs <parallel_jobs/index>`.
 
