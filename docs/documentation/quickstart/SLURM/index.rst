@@ -4,7 +4,7 @@ SLURM quick start tutorial
 As workload manager to schedule jobs, Pleiadi employs SLURM. SLURM schedules jobs on a certain amount of allocated resources (number of nodes, number of CPUs per node, time limit, memory amount, etc.) according to the specifications of the user.
 
 Compute nodes main features
-^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The below table summarizes the main features of the compute nodes of the Pleiadi cluster, which are useful to set the Slurm options in the submission scripts or for interactive jobs submissions: 
 
@@ -197,5 +197,8 @@ Parallel jobs
 ^^^^^^^^^^^^^^
 The example in the previous section illustrates a *serial* job which runs a single CPU on a single node, and that does not exploit the resources available in the multiple nodes in the cluster.
 
-We illustrate some examples of *parallel* jobs :doc:`here <parallel_jobs/index>`.
+We illustrate some examples of *parallel* jobs 
 
+.. toctree::
+   :maxdepth: 1
+    parallel_jobs/index.rst
