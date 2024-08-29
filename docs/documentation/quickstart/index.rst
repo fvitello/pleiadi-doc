@@ -28,11 +28,11 @@ TITLE
 .. toctree::
    :maxdepth: 1
 
-    firs_step/index.rst
-    SLURM/index.rst
-    managingfiles/index.rst
-    modules/index.rst
-    libraries/index.rst
+    documentation/quickstart/first_step/index.rst
+    documentation/quickstart/SLURM/index.rst
+    documentation/quickstart/managingfiles/index.rst
+    documentation/quickstart/modules/index.rst
+    documentation/quickstart/libraries/index.rst
 
    
 
