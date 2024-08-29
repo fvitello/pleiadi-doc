@@ -37,7 +37,7 @@ zlib
 ^^^^^^^^^^^^^^^^^^^^^^
 
 Other examples for SLURM submission scripts
-====================
+-------------------------------------------
 
 The ``--array`` option
 -------------------

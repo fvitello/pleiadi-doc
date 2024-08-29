@@ -22,7 +22,7 @@ Rules for the Pleiadi cluster usage
 #. Every user is responsable for every activity either performed by or attributable to herself/himself. Therefore, the account sharing is discouraged and it is only allowed if communicated in time to the HPC Staff. In general, it is NOT allowed to share sensitive data (e.g. username and password) that the user undertakes to properly store.
 
 
-TITLE-TOD
+Documentation
 ====================
 
 .. toctree::
