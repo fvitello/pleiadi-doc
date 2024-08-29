@@ -1,5 +1,5 @@
-Going parallel
-==============
+Parallel jobs examples
+======================
 
 
 
