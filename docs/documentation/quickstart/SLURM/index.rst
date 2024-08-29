@@ -197,6 +197,5 @@ If you need more flexibility, you will need to use the `salloc <https://slurm.sc
     ^^^^^^^^^^^^^^
     The example in the previous section illustrates a *serial* job which runs a single CPU on a single node, and that does not exploit the resources available in the multiple nodes in the cluster.
 
-    We illustrate below some examples of *parallel* jobs. 
-    See the details in :doc:`parallel jobs <parallel_jobs/index>`.
+    We illustrate some examples of *parallel* jobs :doc:`here <parallel_jobs/index>`.
 
