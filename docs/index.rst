@@ -20,5 +20,7 @@ Pleiadi documentation
 
 .. _contributors:
 ------------
-
-  `Contributors <documentation/contributors/index.rst>`_ 
+.. toctree::
+   :maxdepth: 1
+ 
+    documentation/contributors/index.rst
