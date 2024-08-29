@@ -21,4 +21,4 @@ Pleiadi documentation
 .. _contributors:
 ------------
 
-   documentation/contributors/index.rst
+  `Contributors <documentation/contributors/index.rst>`_ 
