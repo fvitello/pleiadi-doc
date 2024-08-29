@@ -201,4 +201,4 @@ We illustrate some examples of *parallel* jobs
 
 .. toctree::
    :maxdepth: 1
-    parallel_jobs/index.rst
+   parallel_jobs/index.rst
