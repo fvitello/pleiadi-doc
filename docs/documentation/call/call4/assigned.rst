@@ -16,15 +16,15 @@ Bologna
   :width: 100%
   :widths: 3 1
 
-  ============================================================================================================    ===================  
-  Project Title                                                                                                   Assigned core hours 
-  ============================================================================================================    ===================  
-  The Milky Way Bulge view with Pleiadi                                                                                  106000
+  ===============================================================================================================    ======================  
+  Project Title                                                                                                        Assigned core hours 
+  ===============================================================================================================    ======================  
+  The Milky Way Bulge view with Pleiadi                                                                                      106000
   Global 3D direct numerical simulations|br| of MHD instabilities in red giant cores                                         500000
   Modeling the Milky Way: kinematics,|br| structure, & building a Selection Function for various stellar tracers.            100000
   The ALPACAS (ALl Purpose AstroChemical|br| AnalySis) framework                                                             250000
   Resolving stellar populations in|br| galaxies with Euclid                                                                  600000
-  ============================================================================================================    ===================
+  ===============================================================================================================    ======================
    
 
 .. |br| raw:: html
