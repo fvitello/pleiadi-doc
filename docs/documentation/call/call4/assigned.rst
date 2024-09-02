@@ -20,10 +20,10 @@ Bologna
   Project Title                                                                                                   Assigned core hours 
   ============================================================================================================    ===================  
   The Milky Way Bulge view with Pleiadi                                                                                  106000
-  Global 3D direct numerical simulations of MHD instabilities in red giant cores                                         500000
-  Modeling the Milky Way: kinematics, structure, & building a Selection Function for various stellar tracers.            100000
-  The ALPACAS (ALl Purpose AstroChemical AnalySis) framework                                                             250000
-  Resolving stellar populations in galaxies with Euclid                                                                  600000
+  Global 3D direct numerical simulations|br| of MHD instabilities in red giant cores                                         500000
+  Modeling the Milky Way: kinematics,|br| structure, & building a Selection Function for various stellar tracers.            100000
+  The ALPACAS (ALl Purpose AstroChemical|br| AnalySis) framework                                                             250000
+  Resolving stellar populations in|br| galaxies with Euclid                                                                  600000
   ============================================================================================================    ===================
    
 
@@ -78,7 +78,7 @@ Trieste
   Unlocking the potential of JWST, Euclid, and SKA - high-z galaxy evolution and cosmology                                      200000
   Simulating and analysing the Euclid universe with Pinocchio                                                                   350000
   Detailed modeling of stellar flares in TESS 20-sec cadence light curves                                                       200000
-  Searching for new exoplanets in the extended TESS mission light curves with the DIAmante and ARPS pipelines                   280000
+  Searching for new exoplanets in the extended TESS mission light curves |br| with the DIAmante and ARPS pipelines                   280000
   MHD modeling of SNR RX J1713.7-3946: The role of clumps and turbulence in the ambient medium                                  500000
   =====================================================================================================================   ===================  
   
