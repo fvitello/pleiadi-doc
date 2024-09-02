@@ -40,11 +40,11 @@ Catania
   ===================== ===============================================================================================================  ====================
   PI                    Project Title                                                                                                     Assigned core hours 
   ===================== ===============================================================================================================  ====================  
-  Gaetano Scandariato   The analysis of CHEOPS and GAPS-2 data for exoplanet discovery and characterization                                 100000
-  Giuseppe Leto         Simulazioni Cherenkov progetto ASTRI linea di calcolo per ASTRI-Horn, #2                                            500000  
-  Styliani Boula        3D RMHD simulations: investigating blazars jet structure                                                            500000
-  Ciro Bigongiari       Simulazioni Cherenkov progetto ASTRI linea di calcolo per ASTRI Mini-Array #2                                       500000
-  Alessandro Lanzafame  PhOYS: Physical properties of young low-mass stars                                                                  400000
+  Gaetano Scandariato   The analysis of CHEOPS and GAPS-2|br| data for exoplanet discovery and characterization                                 100000
+  Giuseppe Leto         Simulazioni Cherenkov progetto ASTRI|br| linea di calcolo per ASTRI-Horn, #2                                            500000  
+  Styliani Boula        3D RMHD simulations: investigating|br| blazars jet structure                                                            500000
+  Ciro Bigongiari       Simulazioni Cherenkov progetto ASTRI|br| linea di calcolo per ASTRI Mini-Array #2                                       500000
+  Alessandro Lanzafame  PhOYS: Physical properties of young|br| low-mass stars                                                                  400000
   ===================== ===============================================================================================================  ====================
 
 
@@ -75,11 +75,11 @@ Trieste
   =====================================================================================================================   ===================
   Project Title                                                                                                           Assigned core hours  
   =====================================================================================================================   ===================  
-  Unlocking the potential of JWST, Euclid, and SKA - high-z galaxy evolution and cosmology                                      200000
+  Unlocking the potential of JWST, Euclid, and SKA|br| - high-z galaxy evolution and cosmology                                      200000
   Simulating and analysing the Euclid universe with Pinocchio                                                                   350000
   Detailed modeling of stellar flares in TESS 20-sec cadence light curves                                                       200000
-  Searching for new exoplanets in the extended TESS mission light curves |br| with the DIAmante and ARPS pipelines                   280000
-  MHD modeling of SNR RX J1713.7-3946: The role of clumps and turbulence in the ambient medium                                  500000
+  Searching for new exoplanets in the extended TESS|br| mission light curves  with the DIAmante and ARPS pipelines                   280000
+  MHD modeling of SNR RX J1713.7-3946: |br|The role of clumps and turbulence in the ambient medium                                  500000
   =====================================================================================================================   ===================  
   
 .. |br| raw:: html
