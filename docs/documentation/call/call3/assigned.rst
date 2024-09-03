@@ -7,10 +7,10 @@ Pleiadi
 
 .. raw:: html
 
-   <h3> Resouces available from  **/**/20** to **/**/20**</h3>
+   <h3> Resouces available from  01/12/2023 to 01/06/2024</h3>
    
 
-Bologna
+Bologna - in progress...
 ^^^^^^^^^^^^^^^^^^^^^^
 .. table::
   :width: 100%
@@ -28,7 +28,7 @@ Bologna
 
      <br>
 
-Catania
+Catania - in progress...
 ^^^^^^^^^^^^^^^^^^^^^^
 .. table::
   :width: 100%
@@ -42,7 +42,7 @@ Catania
   ==============  ==============================================================================================================  =================== 
 
 
-Project "A sportello"
+Project "A sportello" - in progress..
 """""""""""""""""""""
 .. table::
   :width: 100%
@@ -60,7 +60,7 @@ Project "A sportello"
 
      <br>
 
-Trieste
+Trieste - in progress...
 ^^^^^^^^^^^^^^^^^^^^^^
 .. table::
   :width: 100%
@@ -79,7 +79,7 @@ Trieste
      <br>
 
 *********
-Long term Storage (IA2)
+Long term Storage (IA2) - in progress...
 *********
 
 .. table::
