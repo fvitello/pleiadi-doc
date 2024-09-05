@@ -40,11 +40,11 @@ Catania
   ===================== ===============================================================================================================  ====================
   PI                    Project Title                                                                                                     Assigned core hours 
   ===================== ===============================================================================================================  ====================  
-  Gaetano Scandariato   The analysis of CHEOPS and GAPS-2 |br| data for exoplanet discovery and characterization                                 100000
-  Giuseppe Leto         Simulazioni Cherenkov progetto ASTRI |br| linea di calcolo per ASTRI-Horn, #2                                            500000  
-  Styliani Boula        3D RMHD simulations: investigating |br| blazars jet structure                                                            500000
-  Ciro Bigongiari       Simulazioni Cherenkov progetto ASTRI |br| linea di calcolo per ASTRI Mini-Array #2                                       500000
-  Alessandro Lanzafame  PhOYS: Physical properties of young |br| low-mass stars                                                                  400000
+  Gaetano Scandariato   The analysis of CHEOPS and GAPS-2 |br| data for exoplanet discovery and characterization                                  100000 
+  Giuseppe Leto         Simulazioni Cherenkov progetto ASTRI |br| linea di calcolo per ASTRI-Horn, #2                                             500000   
+  Styliani Boula        3D RMHD simulations: investigating |br| blazars jet structure                                                             500000 
+  Ciro Bigongiari       Simulazioni Cherenkov progetto ASTRI |br| linea di calcolo per ASTRI Mini-Array #2                                        500000 
+  Alessandro Lanzafame  PhOYS: Physical properties of young |br| low-mass stars                                                                   400000 
   ===================== ===============================================================================================================  ====================
 
 
