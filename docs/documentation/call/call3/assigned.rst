@@ -41,11 +41,11 @@ Catania
   ===================== ==================================================================================================================  ====================  
   Giuseppe Leto         Simulazioni Cherenkov progetto ASTRI |br| linea di calcolo per ASTRI-Horn                                                 500000   
   Ciro Bigongiari       Simulazioni Cherenkov progetto ASTRI |br| linea di calcolo per ASTRI Mini-Array                                           500000
-  Simone Riggi          PNRR-CN: Deep Learning for radio source analysis in SKA & precursors                                                      20000
+  Simone Riggi          PNRR-CN: Deep Learning for radio source |br| analysis in SKA & precursors                                                      20000
   Salvatore Orlando     A Pathfinder Study to Describe the |br| Early Evolution of Interacting Supernova Remnants: The Case of SN 2014C           500000
   Gianluigi Bodo        Current driven instabilities in relativistic jets                                                                         400000
   Ruggero Biondo        MHD Simulations of solar transients |br| into accurate reconstructions of the interplanetary Parker spiral                108000
-  Alessandro Lanzafame  APsYoungStars5: Astrophysical parameters inference of low-mass stars from the stellar birth-line to the ZAMS              400000
+  Alessandro Lanzafame  APsYoungStars5: Astrophysical parameters |br| inference of low-mass stars from the stellar birth-line to the ZAMS              400000
   ===================== ==================================================================================================================  ==================== 
 
 
