@@ -79,9 +79,9 @@ Trieste
   Project Title                                                                                                           Assigned core hours  
   =====================================================================================================================   =================== 
   Simulating the Euclid universe with Pinocchio                                                                             360000
-  Unlocking the potential of JWST, Euclid, and SKA - high-z galaxy evolution and cosmology                                  200000
+  Unlocking the potential of JWST, Euclid, |br| and SKA - high-z galaxy evolution and cosmology                             200000
   Modelling kilonovae at the dawn of a multi-messenger era                                                                  400000
-  Simulazione di box cosmologico con formazione di gas molecolare catalizzato da polvere                                    350000
+  Simulazione di box cosmologico con formazione |br| di gas molecolare catalizzato da polvere                               350000
   =====================================================================================================================   ===================
   
 .. |br| raw:: html
