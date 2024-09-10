@@ -10,7 +10,7 @@ Pleiadi
    <h3> Resouces available from  01/12/2023 to 01/06/2024</h3>
    
 
-Bologna - in progress...
+Bologna
 ^^^^^^^^^^^^^^^^^^^^^^
 .. table::
   :width: 100%
@@ -30,13 +30,13 @@ Bologna - in progress...
 
      <br>
 
-Catania - in progress...
+Catania
 ^^^^^^^^^^^^^^^^^^^^^^
 .. table::
   :width: 100%
   :widths: 1 3 1
 
-  ===================== =================================================================================================================  ====================
+  ===================== ==================================================================================================================  ====================
   PI                    Project Title                                                                                                        Assigned core hours 
   ===================== ==================================================================================================================  ====================  
   Giuseppe Leto         Simulazioni Cherenkov progetto ASTRI |br| linea di calcolo per ASTRI-Horn                                                 500000   
@@ -45,10 +45,11 @@ Catania - in progress...
   Salvatore Orlando     A Pathfinder Study to Describe the |br| Early Evolution of Interacting Supernova Remnants: The Case of SN 2014C           500000
   Gianluigi Bodo        Current driven instabilities in relativistic jets                                                                         400000
   Ruggero Biondo        MHD Simulations of solar transients |br| into accurate reconstructions of the interplanetary Parker spiral                108000
+  Alessandro Lanzafame  APsYoungStars5: Astrophysical parameters inference of low-mass stars from the stellar birth-line to the ZAMS              400000
   ===================== ==================================================================================================================  ==================== 
 
 
-Project "A sportello" - in progress..
+Project "A sportello" 
 """""""""""""""""""""
 .. table::
   :width: 100%
@@ -61,14 +62,14 @@ Project "A sportello" - in progress..
   Hammon - CN HPC Spoke 3                                                                                                   100000
   Automated Analysis of Large-Scale Stellar Spectra                                                                         200000
   Recollimation shocks in MHD relativistic jets - the role of the MHD winds                                                 100000
-  Richiesta aggiuntiva: Simulazioni Cherenkov progetto ASTRI linea di calcolo per ASTRI-Horn                                1000000
+  Richiesta aggiuntiva: Simulazioni |br| Cherenkov progetto ASTRI linea di calcolo per ASTRI-Horn                           1000000
   =====================================================================================================================   =================== 
 
 .. |br| raw:: html
 
      <br>
 
-Trieste - in progress...
+Trieste 
 ^^^^^^^^^^^^^^^^^^^^^^
 .. table::
   :width: 100%
