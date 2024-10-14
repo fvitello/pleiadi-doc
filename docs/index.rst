@@ -42,7 +42,15 @@ Pleiadi documentation
 
    files/areas.rst
    files/transfer.rst
-   
+
+
+.. toctree::
+   :maxdepth: 1
+   :caption: SOFTWARE
+
+   software/module.rst
+   software/programs.rst
+
 
  
    
