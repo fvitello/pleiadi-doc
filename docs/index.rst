@@ -52,5 +52,13 @@ Pleiadi documentation
    software/programs.rst
 
 
+.. toctree::
+   :maxdepth: 1
+   :caption: HELP 
+      help/support.rst
+      help/contributors.rst
+
+
+
  
    
