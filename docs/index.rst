@@ -17,19 +17,18 @@ Pleiadi documentation
    pleiadi/calls.rst
    pleiadi/gentlemen.rst
    pleiadi/rules.rst
-
-
-
-
-
-
 .. toctree::
    :maxdepth: 1
-   :caption: prova
-   documentation/call/index.rst
+   :caption: ACCOUNT
    
-   documentation/quickstart/index.rst
-   documentation/contributors/index.rst
+   account/connecting.rst
+   account/monitor.rst
+   
+.. toctree::
+   :maxdepth: 1
+   :caption: JOBS 
+
+   ciao
 
 
  
