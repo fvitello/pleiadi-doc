@@ -33,7 +33,7 @@ Pleiadi documentation
    jobs/creating.rst
    jobs/managing.rst
    jobs/interactive.rst
-   jobs/parallel_jobs
+   jobs/parallel.rst
 
 
  
