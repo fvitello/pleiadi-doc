@@ -6,7 +6,7 @@ Please write a good support request, so we can solve the problem more quickly an
 Never send support requests to staff members directly
 -----------------------------------------------------
 
-Always send request to  email@dominio.com  and staff menbers will pick up there. Sending request here make sure that somebpdy will pick it up.
+Always use our ticketing system  pleiadi-help@ced.inaf.it and staff menbers will pick up there. Sending request here make sure that somebpdy will pick it up.
 Please note in the request that is about your assigned site (Catania,Bologna or Trieste).
 
 Do not manhandle us as simple “Let me Google that for you” assistants
