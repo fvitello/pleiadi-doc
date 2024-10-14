@@ -36,5 +36,13 @@ Pleiadi documentation
    jobs/parallel.rst
 
 
+.. toctree::
+   :maxdepth: 1
+   :caption: FILES 
+
+   files/areas.rst
+   files/transfer.rst
+   
+
  
    
