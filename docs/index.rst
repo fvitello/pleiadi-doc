@@ -17,6 +17,8 @@ Pleiadi documentation
    pleiadi/calls.rst
    pleiadi/gentlemen.rst
    pleiadi/rules.rst
+
+   
 .. toctree::
    :maxdepth: 1
    :caption: ACCOUNT
