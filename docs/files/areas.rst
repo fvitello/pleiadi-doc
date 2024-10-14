@@ -2,7 +2,7 @@ The cluster areas
 ==============
 
 **Note:** There is no backup of the data stored on the Pleiadi cluster. Any removed file is lost forever. It is the user’s responsibility to keep a copy of the contents of their data in a safe place.
--------------------
+
 
 
 The *home* directory
