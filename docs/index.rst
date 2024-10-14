@@ -18,7 +18,7 @@ Pleiadi documentation
    pleiadi/gentlemen.rst
    pleiadi/rules.rst
 
-   
+
 .. toctree::
    :maxdepth: 1
    :caption: ACCOUNT
@@ -30,7 +30,10 @@ Pleiadi documentation
    :maxdepth: 1
    :caption: JOBS 
 
-   ciao
+   jobs/creating.rst
+   jobs/managing.rst
+   jobs/interactive.rst
+   jobs/parallel_jobs
 
 
  
