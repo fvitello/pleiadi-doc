@@ -11,10 +11,23 @@ Pleiadi documentation
 
 .. toctree::
    :maxdepth: 1
+   :caption: ABOUT PLEIADI
 
-   
+   pleiadi/clusters.rst
+   pleiadi/calls.rst
+   pleiadi/gentlemen.rst
+   pleiadi/rules.rst
+
+
+
+
+
+
+.. toctree::
+   :maxdepth: 1
+   :caption: prova
    documentation/call/index.rst
-   documentation/clusters/index.rst
+   
    documentation/quickstart/index.rst
    documentation/contributors/index.rst
 

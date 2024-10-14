@@ -3,22 +3,6 @@ SLURM quick start tutorial
 
 As workload manager to schedule jobs, Pleiadi employs SLURM. SLURM schedules jobs on a certain amount of allocated resources (number of nodes, number of CPUs per node, time limit, memory amount, etc.) according to the specifications of the user.
 
-Compute nodes main features
-^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-The below table summarizes the main features of the compute nodes of the Pleiadi cluster, which are useful to set the Slurm options in the submission scripts or for interactive jobs submissions: 
-
-+-----------------------------+----------------+
-| Number of CPUs              | 36             |
-+-----------------------------+----------------+
-| Number of sockets           | 2              |
-+-----------------------------+----------------+
-| Number of cores per socket  | 18             |
-+-----------------------------+----------------+
-| Number of threads per core  | 1              |
-+-----------------------------+----------------+
-| RAM memory                  | 128 or 256 GB  |
-+-----------------------------+----------------+
 
 
 Gathering information
