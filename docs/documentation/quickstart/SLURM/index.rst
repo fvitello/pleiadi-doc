@@ -131,7 +131,7 @@ To interrupt the execution of a job we use the ``scancel`` command in this way:
 (e.g. ``scancel 83``).
 
 Monitoring of the used CPU hours (CPU hours saldo)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+""""""""""""""""""""""""""""""""""""""""""""""""""
 
 To monitor the utilization of the CPU hours assigned when the account was activated by the board members, according to the user's request, you can use the SLURM report command ``sreport``, for example with the follwing options: 
 
