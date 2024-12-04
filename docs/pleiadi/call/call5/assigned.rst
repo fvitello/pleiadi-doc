@@ -10,7 +10,7 @@ Pleiadi
    <h3> Resouces available from  - to -< /h3>
    
 
-Bologna
+Bologna - to be defined
 ^^^^^^^^^^^^^^^^^^^^^^
 .. table::
   :width: 100%
@@ -28,7 +28,7 @@ Bologna
 
      <br>
 
-Catania
+Catania - to be defined
 ^^^^^^^^^^^^^^^^^^^^^^
 .. table::
   :width: 100%
@@ -44,7 +44,7 @@ Catania
   ===================== ===============================================================================================================  ====================
 
 
-**Project "A sportello" - in progress...**
+**Project "A sportello" - to be defined**
 """""""""""""""""""""
 .. table::
   :width: 90%
@@ -63,7 +63,7 @@ Catania
 
      <br>
 
-Trieste
+Trieste - to be defined
 ^^^^^^^^^^^^^^^^^^^^^^
 .. table::
   :width: 100%
