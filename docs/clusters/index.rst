@@ -2,4 +2,4 @@ Old link
 ===============================
 
 
-This is an old link, please go to `here <pleiadi/clusters.rst>_`  
+This is an old link, you are looking for  `clusters structure? <pleiadi/clusters.rst>_`  
