@@ -7,7 +7,7 @@ Call #5 text
    
 ---------------------
 
-.. centered:: (closing date 30/06/2024)
+.. centered:: (closing date 15/01/2025)
 
 INAF's USC VIII-Computing issues a new call (the fifth one) for the use of HPC/HTC computing resources and for the availability of data storage spaces.
 
