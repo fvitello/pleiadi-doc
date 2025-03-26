@@ -64,18 +64,18 @@ Trieste
   :width: 100%
   :widths: 3 1
 
-  =========================================================================================================================================================   ====================
-  Project Title                                                                                                                                                Assigned core hours  
-  =========================================================================================================================================================   ====================  
+  ==========================================================================================================================================================   ====================
+  Project Title                                                                                                                                                 Assigned core hours  
+  ==========================================================================================================================================================   ====================  
   Developing and implementing new models |br| of kinetic AGN feedback in cosmological simulations                                                                   250000
   Unlocking the potential of JWST, Euclid,|br| and SKA - high-z galaxy evolution  and cosmology                                                                     200000
-  N-body simulations for primordially|br| segregated Multiple Populations in Globular Clusters                                                                      400000
-  Illuminating the Dark Sector: Understanding|br| Modified Gravity Signatures with Cross-Correlations |br| of Gravitational Waves and Large-Scale Structure         450000
-  Escape of Cosmic Rays from astrophysical|br| sources: the role of the non-resonant Bell instability                                                               350000
-  Simulations and Analyses Across the Spectrum|br| - Setting the Stage for Euclid-SKAO Synergies                                                                    150000
+  N-body simulations for primordially |br| segregated Multiple Populations in Globular Clusters                                                                      400000
+  Illuminating the Dark Sector: Understanding |br| Modified Gravity Signatures with Cross-Correlations |br| of Gravitational Waves and Large-Scale Structure         450000
+  Escape of Cosmic Rays from astrophysical |br| sources: the role of the non-resonant Bell instability                                                               350000
+  Simulations and Analyses Across the Spectrum |br| - Setting the Stage for Euclid-SKAO Synergies                                                                    150000
   Simulating and analysing the Euclid universe                                                                                                                      350000
   AGILE nelle PLEIADI                                                                                                                                               480000
-  =========================================================================================================================================================   ===================  
+  ==========================================================================================================================================================   ====================  
   
 .. |br| raw:: html
 
