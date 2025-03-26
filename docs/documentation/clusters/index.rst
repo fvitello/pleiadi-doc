@@ -35,7 +35,7 @@ Catania
 
 #. **1 frontend node**
 #. **72 compute nodes without GPUs** (12 with a RAM memory of 256 GB and 60 with a RAM memory of 128 GB)
-#. **6 compute nodes with 1 GPU each** (4 of Tesla K40m type, of 12 GB of memory each, and 2 of Tesla V100 PCIe type, of 16 GB of memory each), with a RAM memory of 128 GB
+#. **10 compute nodes with 4 GPU each** (Tesla V100, of 16 GB of memory each), with a RAM memory of 256 GB
 #. **1 storage volume** of 174 TB with BeeGFS parallel filesystem
 
 The below table summarizes the main features of the Catania Pleiadi cluster:
