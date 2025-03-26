@@ -16,17 +16,17 @@ Bologna
   :width: 100%
   :widths: 3 1
 
-  ========================================================================================================================    ======================  
+  =========================================================================================================================    ======================  
   Project Title                                                                                                                  Assigned core hours 
-  ========================================================================================================================    ======================  
+  =========================================================================================================================    ======================  
   From Galaxies to Gravitational Waves:|br| BHs with their galaxies  toward the merger                                                 500000
   Searching for stellar granulation in |br| late-K and M stars                                                                          100000
   Modeling the Milky Way: kinematics, |br| structure, & building a Selection Function for various stellar tracers                       100000
   Galaxy quenching during cluster mergers.                                                                                              500000
   Predicting kilonova polarization |br| for neutron star mergers                                                                        500000
   The Galactic Bulge view with Pleiadi                                                                                                  106000
-  Tracing cosmic-ray acceleration in|br| galaxy clusters and filaments: Cosmological MHD simulation and Lagrangian tracers              300000
-  ========================================================================================================================    ======================
+  Tracing cosmic-ray acceleration in |br| galaxy clusters and filaments: Cosmological MHD simulation and Lagrangian tracers              300000
+  =========================================================================================================================    ======================
    
 
 .. |br| raw:: html
@@ -52,7 +52,7 @@ Catania
   Antonio Franco Rappazzo  TurboHeat                                                                                                           200000
   ========================= ===============================================================================================================  ====================
 
-  ** = GPU project 
+** = GPU project 
 
 .. |br| raw:: html
 
