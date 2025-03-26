@@ -43,7 +43,7 @@ Catania
   PI                        Project Title                                                                                                     Assigned core hours 
   ========================= ===============================================================================================================  ====================  
   Giuseppe Leto             Simulazioni Cherenkov progetto |br| ASTRI linea di calcolo per ASTRI-Horn, #3                                       500000
-  Ciro Bigongiari           Simulazioni Cherenkov progetto |br|ASTRI linea di calcolo per ASTRI Mini-Array #3                                   500000
+  Ciro Bigongiari           Simulazioni Cherenkov progetto |br| ASTRI linea di calcolo per ASTRI Mini-Array #3                                   500000
   Gaetano Scandariato       Exoplanet science in the GPU era**                                                                                  2000
   Gaetano Scandariato       The analysis of CHEOPS and GAPS-2 |br| data for exoplanet discovery and characterization                            100000
   Fulvia Pucci              Particle acceleration at Pulsar Wind |br| Nebulae Termination Shock                                                 300000
@@ -52,7 +52,7 @@ Catania
   Antonio Franco Rappazzo   TurboHeat                                                                                                           200000
   ========================= ===============================================================================================================  ====================
 
-
+** = GPU project
 
 .. |br| raw:: html
 
@@ -64,9 +64,9 @@ Trieste
   :width: 100%
   :widths: 3 1
 
-  =====================================================================================================================================================   ====================
-  Project Title                                                                                                                                            Assigned core hours  
-  =====================================================================================================================================================   ====================  
+  ==========================================================================================================================================================   ====================
+  Project Title                                                                                                                                                 Assigned core hours  
+  ==========================================================================================================================================================   ====================  
   Developing and implementing new models |br| of kinetic AGN feedback in cosmological simulations                                                                   250000
   Unlocking the potential of JWST, Euclid,|br| and SKA - high-z galaxy evolution  and cosmology                                                                     200000
   N-body simulations for primordially|br| segregated Multiple Populations in Globular Clusters                                                                      400000
@@ -75,7 +75,7 @@ Trieste
   Simulations and Analyses Across the Spectrum|br| - Setting the Stage for Euclid-SKAO Synergies                                                                    150000
   Simulating and analysing the Euclid universe                                                                                                                      350000
   AGILE nelle PLEIADI                                                                                                                                               480000
-  =====================================================================================================================================================   ===================  
+  ==========================================================================================================================================================   ===================  
   
 .. |br| raw:: html
 
