@@ -35,7 +35,7 @@ Catania
 
 #. **1 frontend node**
 #. **72 compute nodes without GPUs** (12 with a RAM memory of 256 GB and 60 with a RAM memory of 128 GB)
-#. **6 compute nodes with 1 GPU each** (4 of Tesla K40m type, of 12 GB of memory each, and 2 of Tesla V100 PCIe type, of 16 GB of memory each), with a RAM memory of 128 GB
+#. **10 compute nodes with 4 GPU each** (4 of Tesla V100 type, of 16 GB of memory each), with a RAM memory of 128 GB
 #. **1 storage volume** of 174 TB with BeeGFS parallel filesystem
 
 The below table summarizes the main features of the Catania Pleiadi cluster:
@@ -58,6 +58,24 @@ The below table summarizes the main features of the Catania Pleiadi cluster:
 | Storage volume         | 174 TB, BeeGFS parallel filesystem                       |
 +------------------------+----------------------------------------------------------+
 
++------------------------+---------------------------------------------------------------------+
+| Architecture           | Cluster Linux ppc64le                                               |
++------------------------+---------------------------------------------------------------------+
+| Nodes interconnection  | InfiniBand Mellanox ConnectX-5 (MT27800), 100 Gbps EDR interconnect |                                               |
++------------------------+---------------------------------------------------------------------+
+| Service network        | Ethernet 1 Gbits                                                    |
++------------------------+---------------------------------------------------------------------+
+| CPU Model              | IBM POWER9, 2.3–3.8 GHz                                             |
++------------------------+---------------------------------------------------------------------+
+| Number of nodes        | 10                                                                  |
++------------------------+---------------------------------------------------------------------+
+| Operating system       | Almalinux 8.10                                                      |
++------------------------+---------------------------------------------------------------------+
+| Workload manager       | SLURM 21.08.5                                                       |
++------------------------+---------------------------------------------------------------------+
+| Storage volume         | 28 TB, BeeGFS parallel filesystem  (temporary)                      |
++------------------------+---------------------------------------------------------------------+
+
 Compute nodes main features
 """""""""""""""""""""""""""
 
@@ -73,6 +91,23 @@ The below table summarizes the main features of the compute nodes of the Pleiadi
 | Number of threads per core  | 1              |
 +-----------------------------+----------------+
 | RAM memory                  | 128 or 256 GB  |
++-----------------------------+----------------+
+
+GPU nodes main features
+"""""""""""""""""""""""""""
+
+The below table summarizes the main features of the compute nodes of the Pleiadi cluster, which are useful to set the Slurm options in the submission scripts or for interactive jobs submissions: 
+
++-----------------------------+----------------+
+| Number of CPUs              | 128            |
++-----------------------------+----------------+
+| Number of sockets           | 2              |
++-----------------------------+----------------+
+| Number of cores per socket  | 18             |
++-----------------------------+----------------+
+| Number of threads per core  | 4              |
++-----------------------------+----------------+
+| RAM memory                  | 256 GB         |
 +-----------------------------+----------------+
 
 
