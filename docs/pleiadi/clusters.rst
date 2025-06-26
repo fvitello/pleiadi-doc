@@ -58,6 +58,7 @@ The below table summarizes the main features of the Catania Pleiadi cluster:
 | Storage volume         | 174 TB, BeeGFS parallel filesystem                       |
 +------------------------+----------------------------------------------------------+
 
+Pleiadi-GPU cluster:
 +------------------------+---------------------------------------------------------------------+
 | Architecture           | Cluster Linux ppc64le                                               |
 +------------------------+---------------------------------------------------------------------+
