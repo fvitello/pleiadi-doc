@@ -58,11 +58,11 @@ The below table summarizes the main features of the Catania Pleiadi cluster:
 | Storage volume         | 174 TB, BeeGFS parallel filesystem                       |
 +------------------------+----------------------------------------------------------+
 
-Pleiadi-GPU cluster:
+Pleiadi-GPU cluster:    
 +------------------------+---------------------------------------------------------------------+
 | Architecture           | Cluster Linux ppc64le                                               |
 +------------------------+---------------------------------------------------------------------+
-| Nodes interconnection  | InfiniBand Mellanox ConnectX-5 (MT27800), 100 Gbps EDR interconnect |                                               |
+| Nodes interconnection  | InfiniBand Mellanox ConnectX-5 (MT27800), 100 Gbps EDR interconnect |
 +------------------------+---------------------------------------------------------------------+
 | Service network        | Ethernet 1 Gbits                                                    |
 +------------------------+---------------------------------------------------------------------+
