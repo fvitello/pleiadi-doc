@@ -118,7 +118,7 @@ Palermo
 ^^^^^^^^^^^^^^^^^^^^^^
 
 #. **1 frontend node**
-#. **4 compute nodes with 4 GPU each** (4 of Tesla V100 type, of 16 GB of memory each), with a RAM memory of 128 GB (in the future will be 8)
+#. **4 compute nodes with 4 GPU each** (4 of Tesla V100 type, of 16 GB of memory each) (in the future will be 8 nodes)
 #. **1 storage volume** of 7,8 TB with OrangeFs parallel filesystem (temporary)
 
 Palermo-GPU cluster:  
@@ -167,8 +167,8 @@ Trieste
 ^^^^^^^^^^^^^^^^^^^^^^
 
 #. **1 frontend node**
-#. **60 compute nodes without GPUs** (all with 256 GB of RAM)
-#. **6 compute nodes with 1 GPU each** (Tesla K80 and 128 GB of RAM)
+#. **72 compute nodes without GPUs** (all with 256 GB of RAM)
+#. **4 compute nodes with 4 GPU each** (4 of Tesla V100 type, of 16 GB of memory each)
 #. **1 storage volume** of 480 TB with BeeGFS parallel filesystem
 
 The below table summarizes the main features of the Trieste Pleiadi cluster:
@@ -182,9 +182,9 @@ The below table summarizes the main features of the Trieste Pleiadi cluster:
 +------------------------+----------------------------------------------------------+
 | CPU Model              | Intel(R) Xeon(R) CPU E5-2697 v4 @ 2.30GHz                |
 +------------------------+----------------------------------------------------------+
-| Number of nodes        | 66                                                       |
+| Number of nodes        | 72                                                       |
 +------------------------+----------------------------------------------------------+
-| Operating system       | CentOS Linux release 7.9.2009                            |
+| Operating system       | CentOS 9                                                 |
 +------------------------+----------------------------------------------------------+
 | Workload manager       | SLURM 19.05.0                                            |
 +------------------------+----------------------------------------------------------+
