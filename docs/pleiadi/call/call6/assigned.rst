@@ -68,12 +68,12 @@ Trieste
   GADGET-BoxTree                                                                                                                                                     15000
   Exa-scale ready Tree for N-boby codes                                                                                                                              500000
   Simulating and analysing the Euclid universe                                                                                                                       490000
-  Galaxies in the very-high redshift Universe: |br| insights from GAEA                                                                                                    200000
-  Zoom-In Simulation of a Milky Way analog: |br| Chemical Evolution, Dust, and Radioactive Heating for Planetary Habitability                                             400000
+  Galaxies in the very-high redshift Universe: |br| insights from GAEA                                                                                               200000
+  Zoom-In Simulation of a Milky Way analog: |br| Chemical Evolution, Dust, and Radioactive |br| Heating for Planetary Habitability                                   400000
   Mocking the Universe with GAEA                                                                                                                                     200000
-  Advancing Stellar Evolution Models through 3D |br| Simulations of a Convective Core                                                                                     500000
+  Advancing Stellar Evolution Models through 3D |br| Simulations of a Convective Core                                                                                500000
   Constraining cosmology with Gravitational Waves                                                                                                                    450000
-  Simulazioni cosmologiche zoom-in di gruppi |br| e ammassi di galassie con evoluzione della polvere e formazione molecolare su grani                                     230000
+  Simulazioni cosmologiche zoom-in di gruppi |br| e ammassi di galassie con evoluzione della polvere |br| e formazione molecolare su grani                                     230000
   DEMNUni recovery                                                                                                                                                   350000
   ==========================================================================================================================================================   ====================  
   
