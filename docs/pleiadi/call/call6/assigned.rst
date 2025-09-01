@@ -44,7 +44,7 @@ Catania
   Ciro Bigongiari           Simulazioni Cherenkov progetto |br| ASTRI linea di calcolo per ASTRI Mini-Array #6                                      500000
   Gaetano Scandariato       Exoplanet science in the GPU era**                                                                                      2000
   Gaetano Scandariato       The analysis of CHEOPS and GAPS-2 |br| data for exoplanet discovery and characterization                                100000
-  Sylvain Breton            Excitation of internal waves in stars |br| by turbulent convection                                                      5000
+  Sylvain Breton            Excitation of internal waves in stars |br| by turbulent convection**                                                      5000
   Riccardo Ciolfi           Jet-in-the-Box — GRB jets breaking out |br| binary neutron star merger environments                                     500000
   Paola Marziani            Chemical abundances in the AGN broad line |br| emitting regions                                                         56000
   Alessandro Lanzafame      PhOYS3: Physical properties of young |br| low-mass stars                                                                500000
