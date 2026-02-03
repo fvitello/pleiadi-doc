@@ -21,7 +21,8 @@ The account expires as indicated in the application form. To renew the account y
 
 .. toctree::
    :maxdepth: 2
-   
+
+   call/call7/call7.rst
    call/call6/call6.rst
    call/call5/call5.rst
    call/call4/call4.rst
