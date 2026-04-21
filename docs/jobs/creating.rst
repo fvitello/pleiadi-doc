@@ -56,9 +56,8 @@ If you want to submit a GPU job a possible sbatch script can be::
  #SBATCH --time=00:10:00
  #SBATCH --ntasks=1
  #SBATCH --gres=gpu:4  #use all gpu
- #SBATCH --partition=gpu   # at the moment is called test, in the future will be gpu
+ #SBATCH --partition=gpu  
  #SBATCH --error=job.%j.err
  #SBATCH --output=job.%j.out
 
- source /opt/env_ppc.sh  #IMPORTANT: Do not forget this! It ensures the correct environment setup for GPU jobs.
-
+ 
